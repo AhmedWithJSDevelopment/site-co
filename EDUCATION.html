@@ -1,0 +1,2435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Technology</title>
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Prata&family=Share+Tech&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/ED.css">
+  
+    <link rel="stylesheet" href="./style/mediaquery.css">
+   
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<style>
+
+
+body {
+  overflow-x: hidden;
+
+}
+
+
+
+
+*  {
+    margin:0 ;
+    padding: 0 ;
+    box-sizing : border-box ;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+.section-header{
+    max-width: 1280px;
+    border-radius: 0 0 50px 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 60px 0px rgba(0,0,0,0.13);
+    z-index: 9000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e9e9e9;
+  }
+  
+  
+  .section-header:hover{
+    border-radius: 0;
+  }
+
+  
+  .container-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+  
+  }
+  
+  .left img{
+    width: 180px;
+    height: 65px;
+    padding-left: 30px;
+    margin-left: 50px;
+  }
+  
+  .right{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .right ul{
+    list-style: none;
+    display: flex;
+    padding-right: 150px;
+    margin: 20px 0;
+    justify-content: center;
+  }
+  
+  .right ul img{
+    width: 32px;
+    margin-right: 10px;
+  }
+  .right ul li{
+    width: 32px;
+    margin-right: 10px;
+  }
+  
+  .container-header2{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .container-header2 ul{
+    list-style: none;
+    display: flex;
+  }
+  
+  .container-header2 ul li{
+    padding: 5px 15px;
+    font-family: 'Prata', serif;
+    font-size: 14px;
+  }
+  
+  .container-header2 ul li a{
+    text-decoration: none;
+    color: #284169;
+  }
+  
+  .container-header2 ul li a:hover{
+    color: #28416986;
+  }
+  
+  .container-header2 ul li a:focus{
+    color: red;
+  }
+/* -------------------------------------------------------------------------------------------- */
+
+/* .mobile{
+  font-size: xx-large;
+display: none;
+
+    position: absolute;
+    color: #113064;
+    cursor: pointer;
+    top: -46px;
+    left: 58px;
+    margin-left: 63px;
+    font-size: 45px;
+    max-width: 100%;
+    width: 100%;} */
+
+
+
+
+
+
+    header.hddr{
+      position: fixed;
+      
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color:#e9e9e9;
+      box-shadow: 0 5px 10px rgba(0,0, 0, .1);
+      /* padding: 0px 7%; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* z-index: 100; */
+      display: none;
+      justify-content: center;
+      background-color: white;
+    }
+
+
+    
+header.hddr .navbar ul{
+  list-style: none;
+  }
+  header.hddr .navbar ul li{
+  position: relative;
+  float: left;
+  }
+  header.hddr .navbar ul li a{
+  font-size: 17px;
+  padding: 8px;
+  color: #333;
+  display: block;
+  margin-left: 14px;
+  transition: all .2s ease-in-out;
+  }
+  
+  header.hddr .navbar ul li a:hover{
+    background-color: #333;
+    background-color: #e9e9e9;
+    background-color: rgba(0,0,0,.03);
+    opacity: .7;
+    color: #fff;
+    color: #284169!important;
+  }
+  header.hddr .navbar ul li a:focus{
+    color: #ee2225!important;
+  }
+  
+  et_pb_menu_0_tb_header.et_pb_menu ul li.current-menu-item a {
+    color: #ee2225!important;
+}
+
+
+
+
+
+
+
+  #mennu-bar{
+    display: none;
+  }
+  
+  header.hddr label {
+    font-size: 50px;
+   
+    color: #284169;
+    cursor: pointer;
+    display: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------content------------------------- */
+
+
+
+.content1{
+    position: relative;
+    
+    text-align: center;
+    height: 550px;
+    width: 2560;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(140deg,#004872 0%,rgba(41,17,96,0.8) 100%),url(https://www.cloudtechiq.com/wp-content/uploads/2020/11/Education-scaled.jpg)!important;
+    /* background-image: linear-gradient(140deg,rgba(0, 0, 0, 0) 0%,rgb(247, 247, 3) 100%),url(https://www.cloudtechiq.com/wp-content/uploads/2020/11/Education-scaled.jpg)!important; */
+  
+    background-size: cover;
+    z-index: 850;
+  }
+  
+  .centered1{
+  
+
+
+    position: absolute;
+    top: 30% !important;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+    color: #f1f1f1;
+    padding: 7px;
+  }
+/*   
+  @keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  } */
+  
+  .centered1 h1{
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-family: 'Share Tech', sans-serif; 
+    /* animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; */
+  }
+  
+  .centered1 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    /* animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; */
+  }
+  
+  
+  
+  
+  
+  
+  .butten{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+   
+   
+    
+  }
+  
+  .butten a{
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+  
+  .btn1{
+    background-image: linear-gradient(90deg,#ffffff 0%,#2573f9 100%);
+    
+    background-color: #2573f9;
+    background-image: linear-gradient(90deg,#ffffff 0%,#2573f9 100%);
+    background-color: #2573f9;
+    /* background-image: linear-gradient(-270deg,gold 0%,black 100%);
+    background-color: #fff; */
+    border-radius: 0 100px 100px 0;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 12px;
+    padding-left: 30%;
+    text-align: right;
+    margin-right: 80px;
+    /* animation: slide-in-blurred-leftt 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both; */
+  }
+  
+  .btn2{
+    background-color: #307af9;
+    /* background-image: linear-gradient(-270deg,gold 0%,black 100%);
+    background-color: #fff; */
+    border-radius: 50px;
+    padding: 20px;
+    margin-right: 80px;
+    /* animation: slide-in-blurred-leftt 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both; */
+  }
+  
+  .btn2:hover{
+    background-color: #5e97f8;
+  }
+  
+  .btn3{
+    background-color: #5e97f8;
+    /* background-image: linear-gradient(-270deg,gold 0%,black 100%);
+    background-color: #fff; */
+    border-radius: 50px;
+    padding: 20px;
+    /* animation: slide-in-blurred-leftt 5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both; */
+  }
+  
+  .btn3:hover{
+    background-color: #307af9;
+  }
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+.butten{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+  
+  
+  
+    
+  }
+  
+  .butten a{
+    text-decoration: none;
+    color: #ffffff;
+   
+  }
+  
+  .btn1{
+    animation: slide-in-blurred-right 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    
+    background-image: linear-gradient(-270deg,gold 0%,black 100%);
+    background-color: #fff;
+    
+  
+  
+    border-radius: 0 100px 100px 0;
+    
+    overflow: hidden;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 12px;
+    padding-left: 50%;
+    text-align: right;
+    margin-right: 80px;
+    margin-left: -2px;
+    
+    animation: slide-in-blurred-leftt 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  animation-play-state: paused;
+  
+  
+  
+  
+  background-image: linear-gradient(90deg,#ffffff 0%,#2573f9 100%);
+      background-color: #2573f9;
+    
+  }
+  
+  
+  
+  section.content:hover .btn1{
+    animation-delay: 0.4s;
+    animation-play-state: running;
+  }
+  
+  
+  h4.bbttnn1 {
+    margin-left: -122px;
+}
+  
+  
+  .btn2{
+   
+   
+      background-color: #2573f9;
+    border-radius: 50px;
+    padding: 20px;
+    margin-right: 80px;
+    animation: slide-in-blurred-leftt 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation-play-state: paused;
+  }
+  
+  section.content:hover .btn2{
+    animation-delay: 0.4s;
+    animation-play-state: running;
+  }
+  
+  .btn3{
+   
+ 
+      background-color: #51b0ff;
+    border-radius: 50px;
+    padding: 20px;
+    animation: slide-in-blurred-leftt 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation-play-state: paused;
+  }
+  
+  
+  section.content:hover .btn3{
+    animation-delay: 0.4s;
+    animation-play-state: running;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+                              /* --------------------------------Sectiontwo------------------------                               */
+
+
+                              section.two {
+                                position: relative;
+                                background-color: #fff;
+                                background-position: 50%;
+                                background-size: 100%;
+                                background-size: cover;
+                                z-index: 60;
+                                margin-top: 5000px;
+                                overflow :nowrap;
+                                /* margin-top: 20px; */
+
+                                /* animation: slide-in-blurred-left 0.9s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+                                animation-play-state: paused; */
+                            }
+
+
+                                /* section.two{
+                                  animation-delay: 1s;
+                                  animation-play-state: running;
+
+                                } */
+
+
+
+
+                                /* section.content:hover .btn1{
+                                  animation-delay: 0.4s;
+                                  animation-play-state: running;
+                                }
+                                 */
+                              
+                            .twoone,.twoonee{
+                              padding-top: 1px!important;
+                              padding-right: 0px!important;
+                              padding-bottom: 90px!important;
+                              padding-left: 0px!important;
+                              padding-top: 1px;
+                              padding-right: 0px;
+                              padding-bottom: 90px;
+                              padding-left: 0px;
+                              text-align: left;
+                              width:50% ;
+                              
+                          }
+
+
+
+                               
+                          section.two{
+                            width: 100%;
+                            max-width: 100%;
+                            margin: 0;
+                            position: relative;
+                            margin-top: -50px;
+                            margin-top: -50px;
+                            /* top: 50px; */
+                            /* height: 500px; */
+                        }
+
+
+
+
+                          .twoone h2 {
+
+                        font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+                        font-weight: 700;
+                        font-size: 36px;
+                        color: #15314e!important;
+                        line-height: 1.9em;
+                        width: 80%;
+                        margin-top: 250px;
+
+                        margin-left: 100px;
+
+                       
+
+                          }
+
+                        
+
+                        .twoone:before {
+                          border-top-color: #ee2225;
+                          border-top-width: 4px;
+                      }
+
+
+
+                  strong {
+                    font-weight: 700;
+                  }
+
+
+
+                  .twoonee p{
+                    font-family: Open Sans,Arial,sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #15314e!important;
+                    line-height: 2em;
+                    width: 80%;
+                    margin:150px;
+                    margin-left: 100px;
+                    position: relative;
+                    
+                    text-align:justify;
+                    margin-top: 20px;
+                    height: 100%;
+
+                   
+
+                    
+                  }
+
+
+                
+
+
+
+                  .datasheet
+                  {
+                    position: relative;
+                    background-size: cover;
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                    
+                    animation-timing-function: linear;
+                     -webkit-animation-duration: .2s;
+                    animation-duration: .2s;
+
+                    color: #ffffff!important;
+                    border-width: 0px!important;
+                    border-radius: 100px;
+                    letter-spacing: 5px;
+                    font-size: 15px;
+                    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif!important;
+                    font-weight: 700!important;
+                    text-transform: uppercase!important;
+                    background-color: #15314e;
+                    width: 35%;
+                    margin-left: 100px;
+                    
+                    
+                  
+                    margin-top: -100px;
+                   
+
+                  }
+
+             
+
+                  .datasheet {
+                    padding-top: 16px!important;
+                    padding-right: 32px!important;
+                    padding-bottom: 16px!important;
+                    padding-left: 12px!important;
+
+                  }
+                  .datasheet:hover {
+                   background-color: red;
+
+                  }
+
+
+
+                  a.datta{
+                    color: #ffffff!important;
+                  }
+
+
+                  .datasheet>a {
+                    display: inline-block;
+                }
+
+
+
+                .datasheet:after {
+                  transition: all 300ms ease 0ms;
+
+                 }
+
+
+
+                 .datasheet {
+                   text-align: center;
+                  /* transition: background-color 300ms ease 0ms,border-radius 300ms ease 0ms,letter-spacing 300ms ease 0ms; */
+              }
+
+
+
+              a, a:hover {
+                text-decoration: none;
+            }
+
+
+
+                                            /* -----------twooneee----------- */          
+
+
+                          .twooneee {
+                            margin-left: auto;
+                            margin-right: auto;
+                            line-height: 0;
+                            
+                              background-size: cover;
+                              background-position: 50%;
+                              background-repeat: no-repeat;
+                          }
+                        
+
+
+
+
+
+
+
+
+                        .twooneeee img {
+                          position: relative;
+                          
+                          
+                          
+                     
+                          max-width: 1430px;
+                          width: 90%;
+                          height: auto;
+                          padding-left: 40%;
+                          
+                        
+                         
+                        
+                      }
+
+
+
+                    
+
+
+
+
+                      .twooneee{
+                      
+                        float: right;
+                        width:50% ;
+                        margin-top:-590px ;
+                        
+                    }
+
+
+
+
+                                                            /* ----------line----------------- */
+
+
+
+
+
+                        .divider
+                        {
+                           margin-left: 100px!important;
+                        margin-right: auto!important;
+                        margin-bottom: 10px!important;
+                        max-width: 40px;
+                        margin: 0 0 30px;
+                        position: relative;
+                      
+                        }
+
+
+                      
+
+
+                        .divider:before {
+                          content: "";
+                          width: 100%;
+                          height: 1px;
+                          border-top-color: #eee;
+                          border-top-color: rgba(0,0,0,.1);
+                          border-top-width: 1px;
+                          border-top-style: solid;
+                          position: absolute;
+                          left: 0;
+                          top: 0;
+                          z-index: 10;
+                      }
+
+
+
+
+
+                              
+
+                    .divider:before {
+                      border-top-color: #ee2225;
+                      border-top-width: 4px;
+                  }
+                  
+                
+                  .divider:after, .et_pb_space:after {
+                      content: "";
+                      display: table;
+                  }
+
+
+
+
+
+
+
+
+
+
+                          /* ------------section   3------------------------- */
+                          @-webkit-keyframes et_social_fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+                          @-moz-keyframes et_social_fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+                          @-o-keyframes et_social_fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+                          @keyframes et_social_fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+
+                          section.three {
+                            padding-top: 0px;
+                            padding-right: 0px;
+                            padding-bottom: 0px;
+                            margin-left: 100px;
+                            
+        
+                          float: left;
+                            
+                            max-width: 100%;
+                            
+                            position: relative;
+                            margin-top: -10px;
+                            margin-top: 200px;
+                         
+                            position: relative;
+                            background-color: #fff;
+                            background-position: 50%;
+                            background-size: 100%;
+                            background-size: cover;
+                            z-index: 60;
+                          
+                          }
+        
+        
+        
+        
+                            .iconone{
+                            
+                          max-width: 64px;
+                          text-align: left;
+                          margin-left: 0;
+                          
+                        }
+        
+        
+        
+        
+                          .icononee img.icononne{
+                            max-width: 100%;
+                            width: 100%;
+                            
+                            height: auto;
+                           
+                          }
+        
+        
+        
+        
+        
+        
+        .leftOnlineTraining
+        {
+          width: 50%;
+          float: left;
+        }
+        
+        
+        .rightOnlineTraining
+        {
+          width: 50%;
+          float: left;
+        }
+        
+        
+
+        @keyframes et_social_swing {
+          20% { -webkit-transform: rotate3d(0, 0, 1, 15deg); transform: rotate3d(0, 0, 1, 15deg); }
+          40% { -webkit-transform: rotate3d(0, 0, 1, -10deg); transform: rotate3d(0, 0, 1, -10deg); }
+          60% { -webkit-transform: rotate3d(0, 0, 1, 5deg); transform: rotate3d(0, 0, 1, 5deg); }
+          80% { -webkit-transform: rotate3d(0, 0, 1, -5deg); transform: rotate3d(0, 0, 1, -5deg); }
+          100% { -webkit-transform: rotate3d(0, 0, 1, 0deg); transform: rotate3d(0, 0, 1, 0deg); }
+        }
+         span.imagerightt img.imagerighttt
+        {
+          width:100% ;
+          /* height: 762px; */
+        
+          position: relative;
+                                  
+        
+          max-width: 800px;
+          width: 85%;
+          height: auto;
+          margin-right: 15%;
+          padding-left: 15%;
+        
+        
+         
+        } 
+        
+     
+        
+        .tittleone h2 {
+        
+          font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+          font-weight: 700;
+          font-size: 36px;
+          color: #15314e!important;
+          line-height: 1.9em;
+          width: 80%;
+        
+        
+          margin-bottom: 10px!important;
+          margin-top: 10px!important;
+          
+        
+          animation-play-state: paused;
+          
+        
+            }
+        
+        
+            section.three:hover .tittleone h2 {
+              animation-delay: 0.4s;
+              animation-play-state: running;
+            }
+        
+            
+        
+             .divider2
+            {
+            
+            margin-right: auto!important;
+            margin-bottom: 10px!important;
+            margin-top: 10px!important;
+            max-width: 40px;
+            /* margin: 0 0 30px; */
+            position: relative;
+        
+          
+            } 
+        
+        
+        
+            section.three:hover  .divider2{
+              animation-delay: 0.4s;
+              animation-play-state: running;
+            }
+        
+            .divider2:before {
+              content: "";
+              width: 80%;
+              height: 1px;
+              border-top-color: #eee;
+              border-top-color: rgba(0,0,0,.1);
+              border-top-width: 1px;
+              border-top-style: solid;
+              position: absolute;
+              left: 0;
+              top: 0;
+              z-index: 10;
+          }
+        
+        
+        
+        
+        
+                  
+        
+        .divider2:before {
+          border-top-color: #ee2225;
+          border-top-width: 4px;
+        }
+        
+        
+        .divider2:after, .et_pb_space:after {
+          content: "";
+          display: table;
+        }  
+        
+        
+        
+        
+        
+        .phraseone p{
+          font-family: Open Sans,Arial,sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          color: #15314e!important;
+          line-height: 2em;
+          width: 80%;
+        
+          position: relative;
+          
+          text-align:justify;
+          margin-top: 20px;
+          margin-bottom: 50px;
+          height: 100%;
+        
+         
+        }
+        
+       
+        
+        
+        
+        
+                                                      /* ----------------------ddatasheet2-------------------------------- */
+        
+        
+        
+        
+        
+        
+                
+        
+                                                      .datasheet2
+                                                      {
+                                                        position: relative;
+                                                        background-size: cover;
+                                                        background-position: 50%;
+                                                        background-repeat: no-repeat;
+                                                        
+                                                        animation-timing-function: linear;
+                                                         -webkit-animation-duration: .2s;
+                                                        animation-duration: .2s;
+                                    
+                                                        color: #ffffff!important;
+                                                        border-width: 0px!important;
+                                                        border-radius: 100px;
+                                                        letter-spacing: 5px;
+                                                        font-size: 15px;
+                                                        font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif!important;
+                                                        font-weight: 700!important;
+                                                        text-transform: uppercase!important;
+                                                        background-color: #15314e;
+                                                        width:65%;
+                                                       
+                                                        
+                                                        
+                                                      
+                                                        
+                                                        margin-bottom: 100px!important;
+                                                        margin-top: 10px!important;
+                                    
+                                                      }
+                                    
+                                    
+                                                      .datasheet2 {
+                                                        padding-top: 16px!important;
+                                                        padding-right: 16px!important;
+                                                        padding-bottom: 16px!important;
+                                                        padding-left: 16px!important;
+                                    
+                                                      }
+                                                      .datasheet2:hover {
+                                                       background-color: red;
+                                    
+                                                      }
+                                    
+                                    
+                                    
+                                                      a.datta{
+                                                        color: #ffffff!important;
+                                                      }
+                                    
+                                    
+                                                     .datasheet2>a {
+                                                        display: inline-block;
+                                                    }
+                                    
+                                    
+                                    
+                                                    .datasheet2:after {
+                                                      transition: all 300ms ease 0ms;
+                                    
+                                                     }
+                                    
+                                    
+                                    
+                                                     .datasheet2 {
+                                                       text-align: center;
+                                                      transition: background-color 300ms ease 0ms,border-radius 300ms ease 0ms,letter-spacing 300ms ease 0ms;
+                                                      
+                                                  }
+                                    
+                                                 
+                                    
+                                                  a, a:hover {
+                                                    text-decoration: none;
+                                                }
+                                    
+        
+        
+        
+        
+
+                                                section.threee {
+                                                    padding-top: 0px;
+                                                    padding-right: 0px;
+                                                    padding-bottom: 0px;
+                                                    
+                                                    
+                                
+                                                  float: left;
+                                                    
+                                                    max-width: 100%;
+                                                    
+                                                    position: relative;
+                                                    margin-top: 100px;
+                                                    margin-bottom: 100px;
+                                
+                                                    position: relative;
+                                                    /* background-color: #fff; */
+                                                    background-position: 50%;
+                                                    background-size: 100%;
+                                                    background-size: cover;
+                                                    z-index: 60;
+          
+          
+          
+                                                    background-blend-mode: overlay;
+                                                    background-image: url(https://www.cloudtechiq.com/wp-content/uploads/2020/03/coding-background-texture.jpg),linear-gradient(180deg,rgba(0,72,114,0.9) 0%,#291160 100%)!important;
+                                                   
+                                                
+                                                
+                                                  }
+                                                
+          
+          
+          
+          
+                                                    .orii
+                                              {
+                                                margin-top: 200px;
+                                              
+                                              }
+          
+          
+          
+                                               
+                                                
+                                                  
+         
+          
+                                              .tittleoneb h2 {
+          
+                                                font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+                                                font-weight: 700;
+                                                font-size: 36px;
+                                                color: #f1f1f1!important;
+                                                line-height: 1.9em;
+                                                width: 80%;
+          
+                                              
+                                              
+                                                margin-bottom: 10px!important;
+                                                margin-top: 10px!important;
+                                                
+                                              
+                                              
+                                              animation-play-state: paused;
+                                                  }
+          
+                                                  section.threee:hover  .tittleoneb h2  {
+                                                    animation-delay: 0.4s;
+                                                    animation-play-state: running;
+                                                  }
+          
+          
+          
+                                                  .phraseoneb p{
+                                                    font-family: Open Sans,Arial,sans-serif;
+                                                    font-weight: 500;
+                                                    font-size: 16px;
+                                                    color: #15314e!important;
+                                                    color: #d4ccff!important;
+                                                    line-height: 2em;
+                                                    width: 80%;
+                                                   
+                                                    position: relative;
+                                                    
+                                                    text-align:justify;
+                                                    margin-top: 20px;
+                                                    margin-bottom: 20px;
+                                                    height: 100%;
+                                                  
+                                                 
+                                                  
+                                                  }
+          
+                                                  section.threee:hover .phraseoneb p  {
+                                                    animation-delay: 0.4s;
+                                                    animation-play-state: running;
+                                                  }
+          
+          
+          
+          
+          
+                                                                                                  
+                                                          .leftOnlineTrainingg
+                                                          {
+                                                            width: 30%;
+                                                            float: left;
+                                                          }
+          
+          
+                                                          .mc
+                                                          {
+                                                            width: 60%;
+                                                            float: left;
+                                                            box-shadow: 0px 10px 60px 0px rgb(71 74 182 / 12%);
+                                                            margin-bottom: 200px;
+                                                            margin-right:10px ;
+                                                          
+          
+                                                          }
+          
+                                                          
+          
+                                                          .column1{
+                                                            float: left;
+                                                           width: 46%;
+                                                           margin-right: 10px !important;
+                                                           margin-left: 20px !important;
+                                                           margin-bottom: 30px !important;
+                                                           margin-top: 20px !important;
+                                                          
+          
+                                                          }
+          
+                                                          
+          
+                                                          .column2{
+                                                           width: 46%;
+                                                           float: left;
+                                                           text-align: left;
+                                                           margin-right: 20px !important;
+                                                           margin-left: 10px !important;
+                                                           margin-bottom: 30px !important;
+                                                           margin-top: 20px !important;
+                                                          
+                                                          }
+                                                        
+          
+                                                               img.iimage
+                                                              {
+                                                                width: 250px;
+                                                                margin-bottom: 20px !important;
+                                                                margin-top: 30px !important;
+                                                               
+          
+                                                               
+          
+          
+                                                              }
+          
+                                                            
+                                                          
+          
+                                                            .cop
+                                                            {
+                                                              margin-top: 20px !important;
+                                                              margin-bottom: 20px !important;
+                                                              margin-right: 20px !important;
+                                                              margin-left: 20px !important;
+                                                             
+                                                             
+                                                            }
+          
+                                                                  span.ones img
+                                                                  {
+                                                                    margin-top: 40px !important;
+                                                                   
+                                                                   
+                                                                   
+                                                                  }
+          
+          
+          
+          
+                                                                  span.twos img
+                                                                  {
+                                                                    margin-top: 110px !important;
+                                                                  
+          
+                                                                    
+                                                                
+                                                                  }
+                                                                  span.threes img
+                                                                  {
+                                                                    margin-top: 50px !important ;
+                                                                   
+                                                                    
+                                                                    
+                                                                  }
+                                                                  
+                                                                  _.mainblurbimage  span{
+                                                                    animation: slide-in-blurred-left 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both !important;
+                                                            animation-play-state: paused;
+                                                                  }               
+
+
+
+
+
+
+
+
+
+
+                                                                  
+
+                                      section.threeoo {
+                                       
+                                        padding-top: 0px;
+                                        padding-right: 0px;
+                                        padding-bottom: 0px;
+                                       
+                                        
+                    
+                                      float: left;
+                                        
+                                        max-width: 100%;
+                                        width: 100%;
+                                        position: relative;
+                                        margin-top: 150px;
+                                        margin-bottom: 50px;
+                    
+                                        position: relative;
+                                        
+                                        background-position: 50%;
+                                        background-size: 50%;
+                                        background-size: cover;
+                                        z-index: 60;
+                                        
+                                          height: 200px;
+
+
+                                        background-blend-mode: overlay;
+                                       
+                                    
+                                        background-color: #e9e9e9!important;
+                                       
+                                        
+                                    }
+
+
+                                    .tittleoneoo h2
+                                    {
+
+                                    font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+                                    font-weight: 700;
+                                    font-size: 36px;
+                                    color: #15314e!important;
+                                    line-height: 1.9em;
+                                    width: 80%;
+                                  
+
+                                    
+                                  
+                                  
+                                  }
+
+                                  section.threeoo:hover .tittleoneoo h2 {
+                                    animation-delay: 0.4s;
+                                    animation-play-state: running;
+                                  }
+
+                                    .phraseoneoo p
+                                    {
+                                      color: #15314e!important;
+                                      font-size: 25px;
+
+                                    
+                                    
+                                   
+                                
+                                  
+                                  }
+
+                               
+                                    
+
+
+                                    .tittleoneoo h2 ,.phraseoneoo p
+                                    {
+                                      margin-left: 100px !important;
+                                      margin-top:30px !important;
+                                     
+
+                                    }
+
+
+
+
+                                     /* ----------------------ddatasheet44-------------------------------- */
+
+
+
+
+
+
+        
+
+                                     .datasheet44
+                                     {
+                                       position: relative;
+                                       background-size: cover;
+                                       background-position: 50%;
+                                       background-repeat: no-repeat;
+                                       
+                                       animation-timing-function: linear;
+                                        -webkit-animation-duration: .2s;
+                                       animation-duration: .2s;
+                   
+                                       color: #ffffff!important;
+                                       border-width: 0px!important;
+                                       border-radius: 100px;
+                                       letter-spacing: 5px;
+                                       font-size: 15px;
+                                       font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif!important;
+                                       font-weight: 700!important;
+                                       text-transform: uppercase!important;
+                                       background-color: #15314e;
+                                       width:40%;
+                                      
+                                       
+                                       
+                                     
+                                       
+                                       margin-bottom: 100px!important;
+                                       margin-top: 10px!important;
+                   
+
+                                   
+                                   }
+
+                                  
+
+                                     .datasheet44 {
+                                       padding-top: 16px!important;
+                                       padding-right: 16px!important;
+                                       padding-bottom: 16px!important;
+                                       padding-left: 16px!important;
+                                       left: 600px;
+                                       top:-140px;
+                                       height: 60px;
+                   
+                                     }
+                                     .datasheet44:hover {
+                                      background-color: red;
+                   
+                                     }
+                   
+                   
+                   
+                                     a.datta{
+                                       color: #ffffff!important;
+                                     }
+                   
+                   
+                                    .datasheet44>a {
+                                       display: inline-block;
+                                   }
+                   
+                   
+                   
+                                   .datasheet44:after {
+                                     transition: all 300ms ease 0ms;
+                   
+                                    }
+                   
+                   
+                   
+                                    .datasheet44 {
+                                      text-align: center;
+                                     transition: background-color 300ms ease 0ms,border-radius 300ms ease 0ms,letter-spacing 300ms ease 0ms;
+                                 }
+                   
+                   
+                   
+                                 a, a:hover {
+                                   text-decoration: none;
+                               }
+                   
+
+
+
+
+        
+
+                                     .datasheet55
+                                     {
+                                       position: relative;
+                                       background-size: cover;
+                                       background-position: 50%;
+                                       background-repeat: no-repeat;
+                                       
+                                       animation-timing-function: linear;
+                                        -webkit-animation-duration: .2s;
+                                       animation-duration: .2s;
+                   
+                                       color: #ffffff!important;
+                                       border-width: 0px!important;
+                                       border-radius: 100px;
+                                       letter-spacing: 5px;
+                                       font-size: 15px;
+                                       font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif!important;
+                                       font-weight: 700!important;
+                                       text-transform: uppercase!important;
+                                       background-color: #15314e;
+                                       width:30%;
+                                      
+                                       
+                                       
+                                     
+                                       
+                                       margin-bottom: 100px!important;
+                                       margin-top: 10px!important;
+                   
+                                     }
+                   
+                   
+                                     .datasheet55 {
+                                       padding-top: 16px!important;
+                                       padding-right: 16px!important;
+                                       padding-bottom: 16px!important;
+                                       padding-left: 16px!important;
+                                       left: 657px;
+                                       top:-215px;
+                                       height: 60px;
+
+                                       color: #15314e!important;
+                                       border-width: 0px!important;
+                                       border-radius: 100px;
+                                       letter-spacing: 5px;
+                                       font-size: 15px;
+                                       font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif!important;
+                                       font-weight: 700!important;
+                                       text-transform: uppercase!important;
+                                       background-color: #ffffff;
+                   
+                                     
+
+                                    
+                                   
+                                   }
+
+                               
+
+
+                                     .datasheet55:hover {
+                                      background-color: yellow;
+                   
+                                     }
+                   
+                   
+                   
+                                     a.dattaao{
+                                      color: #15314e!important;
+
+                                     }
+                   
+                   
+                                    .datasheet55>a {
+                                       display: inline-block;
+                                   }
+                   
+                   
+                   
+                                   .datasheet55:after {
+                                     transition: all 300ms ease 0ms;
+                   
+                                    }
+                   
+                   
+                   
+                                    .datasheet55 {
+                                      text-align: center;
+                                     transition: background-color 300ms ease 0ms,border-radius 300ms ease 0ms,letter-spacing 300ms ease 0ms;
+                                 }
+                   
+                   
+                   
+                                 a, a:hover {
+                                   text-decoration: none;
+                               }
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-image: linear-gradient(140deg,#004872 0%,rgba(41,17,96,0.8) 100%),url(https://www.cloudtechiq.com/wp-content/uploads/2020/07/it-services-06.jpg)!important;
+    padding-top: 120px;
+    padding-right: 0px;
+    padding-bottom: 120px;
+    padding-left: 0px;
+    position: relative;
+    background-color: #fff;
+    background-position: 1%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0;
+    outline: 0;
+    margin: 0;
+  top: 250px;
+  width: 100%;
+  max-width: 100%;
+    float: left;
+  }
+  
+  .form-left h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Share Tech', sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  
+  .formm{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 25vh;
+    float: left;
+  }
+  
+  .input-row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .input-row .input-group{
+    flex-basis: 45%;
+  }
+  
+  
+  input{
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    padding-bottom: 5px;
+    margin: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+  
+  }
+  
+  select{
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    padding-bottom: 5px;
+    margin: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+  }
+  
+  textarea{
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    width: 50%;
+    outline: none;
+    padding: 10px;
+    margin: 20px 33px;
+    border-bottom: 2px solid #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-align: left;
+  }
+  
+  ::placeholder{
+    color: #ffffff;
+  }
+  
+  .form-right{
+    padding: 20px 0;
+  }
+  
+  .cp{
+    margin: 15px 0;
+  }
+  
+  .cp p{
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Share Tech', sans-serif;
+    margin: 15px 0;
+  }
+  
+  .cp i{
+    font-size: 24px;
+    color: #ffa727;
+  }
+  
+  .cp ul{
+    list-style: none;
+    margin-left: 25px;
+  
+  }
+  
+  .cp ul li{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0;
+  }
+  
+  
+  .under-form{
+    display: flex;
+    justify-content: end;
+  }
+  
+  .under-form span{
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+  }
+  
+  .under-form input{
+    background-color: rgba(0,0,0,0);
+    width: 30px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    padding-bottom: 5px;
+    margin: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+  }
+  
+  .under-form button{
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700!important;
+    text-transform: uppercase;
+    background-color: #ffa727;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  
+  .butten2{
+    position: absolute;
+    top: 0%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+    justify-content: end;
+    
+  }
+  
+  .butten2 a{
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+  
+  .btnn11{
+    background-image: linear-gradient(270deg,#ffffff 0%,#2573f9 100%);
+    background-color: #2573f9;
+    border-radius: 100px 0 0 100px;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 12px;
+    padding-right: 50%;
+    text-align: left;
+  }
+  
+  .btnn22{
+    background-color: #307af9;
+    border-radius: 50px;
+    padding: 20px;
+    margin-right: 80px;
+  }
+  
+  .btnn33{
+    background-color: #307af9;
+    border-radius: 50px;
+    padding: 20px;
+    margin-right: 80px;
+  }
+
+
+  body {
+  overflow-x: hidden;
+
+}
+
+</style>
+
+</head>
+<body>
+    
+
+
+    <section class="head">
+        <div class="section-header">
+          <div class="container-header">
+            <div class="left">
+              <img src="images/logo.png">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="https://www.facebook.com/cloudtechnology"><img src="icons/facebook.png"></a></li>
+                    <li><a href="#"><img src="icons/twitter.png"></a></li>
+                    <li><a href="https://www.linkedin.com/company/cloudtechiq"><img src="icons/linkedin.png"></a></li>
+                    <li><a href="https://www.instagram.com/cloudtech.iq/"><img src="icons/insta.png"></a></li>
+                    <li><a href="skype:?call"><img src="icons/skype.png"></a></li>
+                    <li><a href="https://www.youtube.com/c/CloudTechnologyIQ"><img src="icons/youtube.png"></a></li>
+                  </ul>
+            </div>
+          </div>
+          <div class="container-header2">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="software-development.html">Software Development</a></li>
+              <li><a href="EDUCATION.html">Education</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Business Solutions</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+          <header class="hddr">
+            <input type="checkbox"  id="mennu-bar">
+            <label for="mennu-bar">≡</label>
+           
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#">home</a></li>
+                    <li> <a href="#">Profile</a></li>
+                    <li> <a href="software-development.html">Software Development</a></li>
+                    <li> <a href="EDUCATION.html">Education</a></li>
+                    <li><a href="#">News</a></li>
+                    <li> <a href="#">Business Solutions</a></li>
+                    <li> <a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        </div>
+      
+
+
+
+        
+      </section>
+
+      <section class="content1"   >
+        <div class="centered1"       data-aos="zoom-in"  data-aos-duration="10">
+          <h1> Education</h1>
+          <p>We have consultant education solutions who provide a useful technology that can be implemented in learning and teaching system, we use special strategy to train students, professionals, Governments Enterprises, …etc.</p>
+        </div>
+       
+    <div class="butten"    >
+      <div class="btn1"     data-aos="slide-right"  data-aos-duration='40' data-aos-delay="5"><h4 class="bbttnn1"><a class="OA" href="https://www.cloudtechiq.com/portfoilio/">PORTFOILIO</a></h4></div>
+      <div class="btn2"   data-aos="slide-right"  data-aos-duration='40'  data-aos-delay="50"><h4><a href="https://www.cloudtechiq.com/contact-us/">CONTACT US</a></h4></div>
+      <div class="btn3"   data-aos="slide-right"  data-aos-duration='40' data-aos-delay="500"><h4><a href="https://t.me/cloudtechiq">LIVE CHAT</a></h4></div>
+    </div> 
+      </section>
+
+
+				
+				<section class="two">
+				<div class="twoone"    data-aos="flip-right"><h2>We are Passionate About Building Education Management System</h2></div>
+			
+				<div class="divider"   data-aos="flip-right"><div class="dividerinternal"></div></div><div class=" lft"></div>
+				
+				
+				
+				<div class="twoonee"  data-aos="flip-right"><p>We build a <strong>CloudTech</strong> that is the global learning platform of the <strong>Cloud Technology Education</strong>. Here you will find both online and in-person learning opportunities, which are <strong>completely free to access.</strong><br /> CloudTech is designed to be accessed from <strong>phones</strong>, <strong>tablets</strong>, <strong>laptops </strong>and <strong>PCs</strong>, so you can use it whenever and wherever you are. You can also access the platform in either <strong>English</strong> or <strong>Arabic</strong>; with courses available.</p>
+        
+        <div class="datasheet "    data-aos="fade-right">
+          <a class="datta"     href="https://drive.google.com/file/d/1TSd6IyHtLVCbPiPWNC91xgLhh6a4uPu4/view?usp=sharing">Datasheet</a>
+        </div>
+        </div>
+
+				
+				
+				
+				
+				<div class="twooneee">
+				
+				
+				
+				
+				<span class="twooneeee "><img loading="lazy"      data-aos="flip-left" width="1430" height="1467" src="https://www.cloudtechiq.com/wp-content/uploads/2020/09/ws.png" alt="" title="ws" srcset="https://www.cloudtechiq.com/wp-content/uploads/2020/09/ws.png 1430w, https://www.cloudtechiq.com/wp-content/uploads/2020/09/ws-1280x1313.png 1280w, https://www.cloudtechiq.com/wp-content/uploads/2020/09/ws-980x1005.png 980w, https://www.cloudtechiq.com/wp-content/uploads/2020/09/ws-480x492.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1430px, 100vw" class="wp-image-1013" /></span>
+			</div>
+			
+				
+				
+				
+				
+			</div>
+
+    </section>
+
+    
+
+
+
+    <section class="three" >
+
+      <div class="leftOnlineTraining">
+    <div class="iconone">
+     
+    
+      <!-- section.three.rightOnlineTraining.imageright span -->
+     
+      <span class="icononee "><img  class="icononne"      data-aos="fade-up-left"  loading="lazy" width="128px" height="128px" src="https://www.cloudtechiq.com/wp-content/uploads/2020/10/coding-icon_191.jpg" alt="" title="coding-icon_191" class="wp-image-1217" /></span>
+  </div>
+
+
+  <div class="tittleone"   data-aos="fade-up-left"><h2>Online Training</h2></div>
+
+
+	<div class="divider2"   data-aos="fade-up-left" ><div class="dividerinternall"></div></div><div class=" lftt"></div>
+ 
+
+
+
+  
+  <div class="phraseone"   data-aos="fade-up-left"><p>We build a <strong>CloudTech</strong> that is the global learning platform of the <strong>Cloud Technology Education</strong>. Here you will find both online and in-person learning opportunities, which are <strong>completely free to access.</strong><br /> CloudTech is designed to be accessed from <strong>phones</strong>, <strong>tablets</strong>, <strong>laptops </strong>and <br/> <strong>PCs</strong>, so you can use it whenever and wherever you are. You can also access the platform in either <strong>English</strong> or <strong>Arabic</strong>; with courses available.</p></div>
+
+
+</div>
+
+ 
+  <div class="rightOnlineTraining">
+  <div class="imageright">
+    
+    
+    
+    
+    <span class="imagerightt ">   <img class="imagerighttt"   data-aos="fade-up-right"      loading="lazy" width="800" height="762" src="https://www.cloudtechiq.com/wp-content/uploads/2020/10/online-t.png" alt="" title="online t" srcset="https://www.cloudtechiq.com/wp-content/uploads/2020/10/online-t.png 800w, https://www.cloudtechiq.com/wp-content/uploads/2020/10/online-t-480x457.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 800px, 100vw" class="wp-image-1476" /></span>
+</div>
+</div>
+
+</section>
+
+
+    <section class="three">
+
+
+
+
+      <div class="rightOnlineTraining">
+        <div class="imageright">
+          
+          
+          
+          
+          <span class="imagerightt "><img  class="imagerighttt"  data-aos="fade-up-left" loading="lazy" width="800" height="762" src="https://www.cloudtechiq.com/wp-content/uploads/2020/10/onsite-t.png" alt="" title="onsite t" srcset="https://www.cloudtechiq.com/wp-content/uploads/2020/10/onsite-t.png 800w, https://www.cloudtechiq.com/wp-content/uploads/2020/10/onsite-t-480x457.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 800px, 100vw" class="wp-image-1479" /></span>
+          
+      </div>
+      </div>
+      
+
+
+
+
+      <div class="leftOnlineTraining">
+    <div class="iconone">
+     
+    
+    
+     
+      <span class="icononee "><img   class="icononne"  data-aos="fade-up-left" loading="lazy" width="128" height="128" src="https://www.cloudtechiq.com/wp-content/uploads/2020/10/coding-icon_151.jpg" alt="" title="coding-icon_151" class="wp-image-1216" /></span>
+       
+  </div>
+
+
+  <div class="tittleone" data-aos="fade-up-right"><h2>Onsite Training</h2></div>
+
+
+	<div class="divider2" data-aos="fade-up-left"><div class="dividerinternall"></div></div><div class=" lftt"></div>
+ 
+
+
+
+  
+  <div class="phraseone"><p style="text-align: justify;"  data-aos="fade-up-right">We make onsite training for our enterprise customers in their companies, as well as in our cooperation training centers inside Iraq (in Baghdad, Basra, Erbil, and Sulaymaniyah), or outside Iraq (in Azerbaijan, Egypt, Indonesia, Lebanon, Malaysia, Turkey, and UAE).</p>
+   
+
+
+</div>
+
+ 
+
+
+
+
+
+    </section>
+
+
+
+
+    
+    <section class="three">
+
+      <div class="leftOnlineTraining">
+    <div class="iconone">
+     
+    
+    
+     
+      <span class="icononee "><img class="icononne"   data-aos="fade-up-left" loading="lazy" width="128" height="128" src="https://www.cloudtechiq.com/wp-content/uploads/2020/10/coding-icon_161.jpg" alt="" title="coding-icon_161" class="wp-image-1213" /></span>
+        </div>
+
+
+  <div class="tittleone" data-aos="slide-right" ><h2>Training Paths</h2></div>
+
+
+	<div class="divider2" data-aos="fade-up-left" ><div class="dividerinternall"  ></div></div><div class=" lftt"></div>
+ 
+
+
+
+  
+  <div class="phraseone"  data-aos="slide-right" ><p style="text-align: justify;">We developed special training paths for deferent jobs types, for technical like (Software Engineer, Systems Engineer, Network Engineer, Full Stack Developer, UI/UX Designer, IT Infrastructure Admin, &#8230;etc.), and nontechnical like (HR Administrator, HSE Specialist, Account Auditor, Sales Engineer, Store keeper, &#8230;etc.), <strong>our camps designed to graduate students that knew the real work environment  in enterprise sector.</strong></p></div>
+   
+
+
+</div>
+
+ 
+  <div class="rightOnlineTraining">
+  <div class="imageright">
+    
+    
+    
+    
+    <span class="imagerightt "><img    class="imagerighttt" data-aos="slide-left" loading="lazy" width="800" height="762" src="https://www.cloudtechiq.com/wp-content/uploads/2020/10/Training-path.png" alt="" title="Training path" srcset="https://www.cloudtechiq.com/wp-content/uploads/2020/10/Training-path.png 800w, https://www.cloudtechiq.com/wp-content/uploads/2020/10/Training-path-480x457.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 800px, 100vw" class="wp-image-1552" /></span>
+     
+    <div class="datasheet2 "    data-aos="slide-up">
+      <a class="datta"  href="https://drive.google.com/file/d/12MYY_bhgzYGNdZwXQEt64rVhySdITubi/view?usp=sharing" target="_blank">Training Paths &amp; Courses</a>
+    
+    </div>
+</div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="threee">
+
+
+
+
+  <div class="orii">
+  <div class="rightOnlineTraining">
+    <div class="imageright">
+      
+      
+      
+      
+      <span class="imagerightt "><img  class="imagerighttt"  data-aos="flip-left" loading="lazy" width="800" height="762" src="https://www.cloudtechiq.com/wp-content/uploads/2020/10/Training-c2.png" alt="" title="Training c2" srcset="https://www.cloudtechiq.com/wp-content/uploads/2020/10/Training-c2.png 800w, https://www.cloudtechiq.com/wp-content/uploads/2020/10/Training-c2-480x457.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 800px, 100vw" class="wp-image-1553" /></span>
+       
+      
+  </div>
+  </div>
+  
+
+
+
+
+  <div class="leftOnlineTraining" data-aos="flip-right">
+
+
+
+<div class="tittleoneb"><h2 class="white">Education is in Our Blood</h2></div>
+
+
+<div class="divider2"   data-aos="fade-up-right" ><div class="dividerinternall"></div></div><div class=" lftt"></div>
+
+
+
+
+
+<div class="phraseoneb"><p style="text-align: justify;">In addition, we have an <strong>internship</strong> program that provide free training camps with diploma and master certificates as well as recommendation letters after completion, the program duration is between one to two years.</p>
+ 
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+<section class="three">
+
+  <div class="leftOnlineTrainingg" data-aos="flip-right" >
+
+
+
+<div class="tittleone"><h2>Training Courses Brands</h2></div>
+
+
+<div class="divider2"><div class="dividerinternall"></div></div><div class=" lftt"></div>
+
+
+
+
+
+<div class="phraseone">
+  <p style="text-align: justify;">Our training courses stand out with a professional qualification certificates that comes from big name brands.</p>
+  <p style="text-align: justify;">Browse more than 300 courses and find your inspiration.</p>
+</div>
+
+
+</div>
+
+
+
+
+  <div class="mc">
+
+
+    <div class="column1"    data-aos="flip-left">
+				
+				
+		
+    
+  <div class="cop">
+				
+				
+				
+				
+    <div class="blurbcontent">
+
+      <div class="_mainblurbimage">
+        <span class="sspp"><img  src="https://www.cloudtechiq.com/wp-content/uploads/2020/09/cisco.png" alt=""  class="iimage"    /></span></div>
+      <div class="blurbcontainer">
+        
+        
+      </div>
+    </div>
+  </div><div class="cop">
+    
+    
+    
+    
+    <div class="blurbcontent">
+      <div class="mainblurbimage"><span class="sspp"><img  src="https://www.cloudtechiq.com/wp-content/uploads/2020/10/red-hat-1.png" alt="" class="iimage" /></span></div>
+      <div class="blurbcontainer">
+        
+        
+      </div>
+    </div>
+  </div><div class="cop ">
+    
+    
+    
+    
+    <div class="blurbcontent">
+      <div class="mainblurbimage"><span class="sspp"><img src="https://www.cloudtechiq.com/wp-content/uploads/2020/10/com-1.png" alt="" class="iimage" /></span></div>
+      <div class="blurbcontainer">
+        
+        
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="column2"   data-aos="flip-right">
+    
+    
+    
+    
+    <div class="cop">
+    
+    
+    
+    
+    <div class="blurbcontent">
+      <div class="mainblurbimage" id="km"><span class="ones"><img  src="https://www.cloudtechiq.com/wp-content/uploads/2020/10/ms-1.png" alt="" class="iimage" /></span></div>
+      <div class="blurbcontainer">
+        
+        
+      </div>
+    </div>
+  </div><div class="cop">
+    
+    
+    
+    
+    <div class="blurbcontent">
+      <div class="mainblurbimage "   id="km"><span class="twos"><img src="https://www.cloudtechiq.com/wp-content/uploads/2020/09/Oracle.png" alt=""  class="iimage" /></span></div>
+      <div class="blurbcontainer">
+        
+        
+      </div>
+    </div>
+  </div><div class="cop">
+    
+    
+    
+    
+    <div class="blurbcontent">
+      <div class="mainblurbmage" id="km"><span class="threes"><img  src="https://www.cloudtechiq.com/wp-content/uploads/2020/10/vm-1.png" alt="" class="iimage" /></span></div>
+      <div class="blurbcontainer">
+        
+        
+      </div>
+    </div>
+  </div>
+  </div>
+    
+    
+    
+    
+  </div>
+  </div>
+    </div>
+    </div>
+    </section>
+    
+            
+    
+    <section class="threeoo">
+
+      
+     
+    
+    
+     
+      
+
+
+  <div class="tittleoneoo"  data-aos="flip-right" ><h2>Ready to get started?</h2></div>
+
+
+	 
+
+
+  
+  <div class="phraseoneoo"  data-aos="flip-right" ><p style="text-align: justify;">Get in touch, or create an account</strong></p></div>
+   
+
+
+</div>
+
+ 
+  <div class="rightOnlineTraining">
+  <div class="imageright">
+    
+    
+    
+    
+    
+    <div class="datasheet44 " data-aos="slide-right" >
+      <a class="datta" href="https://www.cloudtech.education/" target="_blank">Create Account</a>
+    </div>
+    
+    <div class="datasheet55 " data-aos="slide-left" >
+      <a class="dattaao" href="https://www.cloudtechiq.com/contact-us/">Contact Us</a>
+    </div>
+</div>
+</div>
+
+</section>
+
+        
+<footer>
+
+  <div class="butten2">
+    <div class="btnn33"   data-aos="slide-left" ><h4><a href="#">LIVE CHAT</a></h4></div>
+    <div class="btnn22"  data-aos="slide-left" ><h4><a href="#">ABOUT US</a></h4></div>
+    <div class="btnn11"  data-aos="slide-left" ><h4><a href="#">PROFILE</a></h4></div>
+  
+    
+  </div>
+  <div class="formm">
+  
+    <div class="form-left">
+      <h1  data-aos="zoom-out-down" >Get in Touch!</h1>
+      <form>  
+        <div class="input-row">
+          <div class="input-group">
+            <input type="text" placeholder="Name">
+          </div>
+  
+          <div class="input-group">
+            <input type="text" placeholder="Email Address">
+          </div>
+  
+          <div class="input-group">
+            <input type="text" placeholder="Address">
+          </div>
+          <div class="input-group">
+            <select>
+              <option>What Kind</option>
+              <option>PERSONAL</option>
+              <option>BUSINESS</option>
+            </select>
+          </div>
+        </div>
+        <textarea rows="5" placeholder="Message"></textarea>
+        <div class="under-form">
+          <p>
+            <span>
+              22 + 6 = 
+            </span>
+            <input type="text">
+            <button type="submit"  data-aos="zoom-out-up" >send messages</button>
+          </p>
+        </div>
+      </form>
+    </div>
+  
+    <div class="form-right">
+      <div class="cp" data-aos="zoom-out-right">
+        <p><i class="fa-solid fa-location-dot"   ></i> Office</p>
+        <ul>
+          <li>• Masdar City, Abu Dhabi</li>
+          <li>• Al jezaaer St., Basra</li>
+          <li>• Bakrajo Rood , Sulaymaniyah</li>
+        </ul>
+      </div>
+      <div class="cp" data-aos="zoom-out-left">
+        <p><i class="fa-solid fa-clock"></i> Hours</p>
+        <ul>
+          <li>Sat ~ Thu: 9:00 AM – 9:00 PM</li>
+          <li>Fri: Closed</li>
+        </ul>
+      </div>
+      <div class="cp" data-aos="zoom-out-right">
+        <p><i class="fa-solid fa-phone"></i> Call Us</p>
+        <ul>
+          <li>Info: +(964) 770 – 0666300</li>
+          <li>Support: +(964) 780 – 4488030</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </footer>
+  
+  </body>
+  </html>
+  
+  </div>
+  </div>
+
+  
+  <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,
+      once: true,
+    });
+  </script>
+
+</body>
+</html>

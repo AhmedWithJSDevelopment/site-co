@@ -1,0 +1,3828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="./style/sofft.css">
+ 
+  <link rel="stylesheet" href="./style/ssoofftt.css">
+ 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+ <style>
+
+body {
+  overflow-x: hidden;
+
+}
+
+
+
+
+*  {
+    margin:0 ;
+    padding: 0 ;
+    box-sizing : border-box ;
+    scroll-behavior: smooth;
+}
+
+
+
+header.hddr{
+  position: fixed;
+  
+  top: 60px;
+  left: 0;
+  right: 0;
+  background-color:#e9e9e9;
+  box-shadow: 0 5px 10px rgba(0,0, 0, .1);
+  /* padding: 0px 7%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* z-index: 100; */
+  display: none;
+  justify-content: center;
+  background-color: white;
+}
+
+
+header.hddr .logo{
+  font-weight: bolder;
+  font-size: 25px;
+  color: #333;
+}
+
+header.hddr .navbar ul{
+list-style: none;
+}
+header.hddr .navbar ul li{
+position: relative;
+float: left;
+}
+header.hddr .navbar ul li a{
+font-size: 17px;
+padding: 8px;
+color: #333;
+display: block;
+margin-left: 14px;
+}
+
+header.hddr .navbar ul li a:hover{
+ 
+  background-color: rgba(0,0,0,.03);
+  opacity: .7;
+ 
+  color: #284169!important;
+}
+
+header.hddr .navbar ul li a:focus{
+  color: #ee2225!important;
+}
+
+
+
+/* header .mnno{
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+} */
+
+
+#mennu-bar{
+  display: none;
+}
+
+header.hddr label {
+  font-size: 50px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+
+.section-header{
+    max-width: 1280px;
+    border-radius: 0 0 50px 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 60px 0px rgba(0,0,0,0.13);
+    z-index: 9000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e9e9e9;
+  }
+
+  .section-header:hover{
+    border-radius: 0;
+  }
+  
+  .container-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+  
+  }
+
+
+  
+  .left img{
+    width: 180px;
+    height: 65px;
+    padding-left: 30px;
+    margin-left: 50px;
+  }
+  
+  .right{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .right ul{
+    list-style: none;
+    display: flex;
+    padding-right: 150px;
+    margin: 20px 0;
+    justify-content: center;
+  }
+  
+  .right ul img{
+    width: 32px;
+    margin-right: 10px;
+  }
+  .right ul li{
+    width: 32px;
+    margin-right: 10px;
+  }
+  
+  .container-header2{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .container-header2 ul{
+    list-style: none;
+    display: flex;
+  }
+  
+  .container-header2 ul li{
+    padding: 5px 15px;
+    font-family: 'Prata', serif;
+    font-size: 14px;
+  }
+  
+  .container-header2 ul li a{
+    text-decoration: none;
+    color: #284169;
+  }
+  
+  .container-header2 ul li a:hover{
+    color: #28416986;
+  }
+  
+  .container-header2 ul li a:focus{
+    color: red;
+  }
+
+
+
+/* -------------------------------------------------- */
+
+
+.content{
+    position: relative;
+    text-align: center;
+    height: 630px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(140deg,rgba(0,72,114,0.9) 0%,rgba(41,17,96,0.8) 100%);
+    background-color: rgba(0,0,0,0);
+  
+    /* background-image: linear-gradient(140deg,rgba(0, 0, 0, 0) 0%,rgb(209, 239, 12) 100%),url(software.png); */
+    background-image: linear-gradient(140deg,rgba(102, 220, 236, 0.9) 0%,rgba(11, 23, 247, 0.8) 100%),url(software.png);
+    background-image: linear-gradient(140deg,rgba(0,72,114,0.9) 0%,rgba(41,17,96,0.8) 100%),url("https://www.cloudtechiq.com/wp-content/uploads/2020/11/rendered-1.png");
+    background-size: cover;
+  }
+
+  
+  
+.centered{
+    position: absolute;
+    top: 30% !important;
+    /* left:1px !important;
+    right:1px !important; */
+    transform: translate(-50%, -50%);
+    color: #f1f1f1;
+    padding: 40px;
+    text-align: center !important;
+  }
+  
+  
+  
+  .centered h1{
+    color: #f1f1f1;
+    color: #ffff;
+    font-size: 75px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    font-family: 'Share Tech', sans-serif; 
+    margin-left:1px !important;
+    margin-right:1px !important;
+    letter-spacing: 0.4px;
+  }
+  
+  .centered p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    line-height: 1.8em;
+    margin-left:1px !important;
+    margin-right:1px !important;
+
+  }
+  
+  
+  
+  h2{
+  
+   color: #f1f1f1;
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 300px;
+    font-family: 'Share Tech', sans-serif; 
+  
+  padding: 20px 2%;
+  
+  }
+  
+  
+  
+  
+  
+  .butten{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+  
+  
+  
+    
+  }
+  
+  .butten a{
+    text-decoration: none;
+    color: #ffffff;
+   
+  }
+  
+  .btn1{
+  
+    background-color: #fff;
+    
+  
+  
+    border-radius: 0 100px 100px 0;
+    
+    overflow: hidden;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 12px;
+    padding-left: 50%;
+    text-align: right;
+    margin-right: 80px;
+    margin-left: -2px;
+    
+ 
+  
+  
+  
+  
+  background-image: linear-gradient(90deg,#ffffff 0%,#2573f9 100%);
+      background-color: #2573f9;
+    
+  }
+  
+  
+
+  
+  
+  h4.bbttnn1 {
+    margin-left: -122px;
+}
+  
+  
+  .btn2{
+   
+   
+      background-color: #2573f9;
+    border-radius: 50px;
+    padding: 20px;
+    margin-right: 80px;
+  
+  }
+  
+
+  
+  .btn3{
+   
+ 
+      background-color: #51b0ff;
+    border-radius: 50px;
+    padding: 20px;
+ 
+  }
+  
+  
+
+  
+  
+/* ----------------------------------------------------------------------------------------------------- */
+
+  section.centerr1{
+      margin-top: 400px;
+      width: 100%;
+      max-width: 100%;
+  }
+
+
+
+  .center2{
+    float: left;
+      width: 100%;
+      max-width: 100%;
+  }
+h2.center3{
+ 
+    width: 50%;
+      font-size: 80px;
+      font-weight: 500;
+      margin-bottom: 1px;
+      font-family: 'Share Tech', sans-serif; 
+      font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+        font-weight: 900;
+        font-size: 35px;
+        color: #15314e!important;
+        line-height: 1.5em;
+  
+      z-index: 100;
+      margin-top: 200px;
+      margin-left:30px;
+      text-align: left;
+      float: left;
+    }
+    
+    
+    
+    
+     span.center5{
+    
+    
+
+        text-align: left;
+      font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #15314e!important;
+      letter-spacing: 2px;
+      line-height: 2em;
+
+     
+      width: 50%;
+      max-width: 100%;
+      display: block;
+      z-index: 988;
+      margin-left: 30px;
+      text-align: left;
+      position: relative;
+    }
+
+
+
+img.center4{
+  text-align: left;
+    z-index:0;
+    height: 375px;
+    margin-top: -346px;
+    max-width: 100%;
+    float: right;
+    width: 100%;
+    position: relative;
+}
+
+/* ----------------------------------------------------------------- */
+
+
+section.centerr1{
+float: left;
+margin-bottom: 10px;
+margin-top: 200px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.centerr2 h2{
+  width: 100%;
+text-align: center;
+  font-weight: 500;
+  margin-bottom: 200px;
+  font-family: 'Share Tech', sans-serif; 
+  font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #15314e!important;
+    line-height: 1.5em;
+ 
+  z-index: 100;
+  text-transform: uppercase;
+ 
+
+}
+
+
+.mainCon{
+  float: left;
+width: 100%;
+max-width: 100%;
+
+}
+.onne{
+  float: left;
+  width: 50%;
+  max-width: 100%;
+  padding-right: 10px;
+
+}
+.twwo{float:left;
+  width: 50%;
+  max-width: 100%;
+padding-left: 10px;
+ 
+}
+
+.icon1{
+  width: 100%;
+  
+}
+
+img.iconnn1{
+  display: block;
+  position: relative;
+  max-width: 100%;
+  bottom: 140px;
+ 
+  float: right;
+ 
+}
+
+
+.etch3{
+  width: 75%;
+ float: right;
+  text-align: left;
+  text-align:right;
+  margin-right: -90px;
+}
+.etch3 h3{
+  color:#333;
+
+  font-weight: 700;
+  line-height: 1.4em;
+  font-size: 22px;
+}
+
+.etch31{
+  margin-bottom: 10px;
+}
+
+.icon2{
+  width: 100%;
+}
+img.iconnn2{
+  display: block;
+  position: relative;
+ 
+float: left;
+bottom: 140px;
+
+max-width: 100%;
+
+z-index: 5;
+}
+
+
+
+.etch33{
+  float: left;
+  width: 75%;
+  color: #173350;
+  color: #444;
+  text-align: left;
+
+  margin-left: -100px;
+ 
+   
+} 
+.etch33 h3{
+  color: #333;
+  font-weight: 700;
+    line-height: 1.4em;
+    font-size: 22px;
+}
+.etch33 h3{
+  text-align:left;
+
+    
+ } 
+.etch331{
+  margin-bottom: 10px;
+
+    
+ } 
+.etch332{
+  margin-bottom: 10px;
+
+    
+ } 
+
+
+/* ----------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------------------------------ */
+section.complete2{
+  position: relative;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+
+
+h2.complete2{
+
+
+
+
+
+
+
+
+
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 50%;
+  font-size: 80px;
+  font-weight: 500;
+  margin-bottom: 1px;
+  font-family: 'Share Tech', sans-serif; 
+  font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    color: #15314e!important;
+    line-height: 1.5em;
+
+  z-index: 100;
+  margin-top: 200px;
+  margin-left:30px;
+  text-align: left;
+  float: left;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+img.complete5{
+ max-width: 100%;
+  height: auto;
+}
+
+.complete3{
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+  background-color:transparent;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+.containerr
+{
+    position: relative;
+    width: 1430px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+
+.containerr .cardd
+{
+    position: relative;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    width: 20%;
+    margin: 30px 2px;
+    text-align: center;
+  
+}
+
+
+.containerr .cardd .imagemm
+{
+ position: absolute; 
+ top: 10px;
+ left: 10px;
+
+ height: calc(100%-20%);
+ width:  calc(100%-20%);
+ z-index: 1;
+ display: flex;
+ justify-content: center;
+align-items: center;
+
+border-radius: 20px;
+
+transition: 0.5s ease-in-out;
+
+    
+}
+
+
+
+
+
+
+
+
+.containerr .cardd .imagemm img
+{
+  position: relative;
+    max-width: 100px;
+    text-align: center;
+   
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+.containerr .cardd .contrr
+{
+    position: relative;
+    right: 0;
+    width: calc(100%-75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.containerr .cardd .contrr p{
+  font-family: Open Sans,Arial,sans-serif;
+    
+     color: #666;
+}
+.containerr .cardd .contrr h3
+{
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    
+
+    font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media  (max-width:992px)
+{
+    .containerr
+    {
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerr .cardd
+    {
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+        background: transparent;
+        margin: -20px 0;
+        box-shadow: none;
+    
+    }
+    .containerr .cardd .imagemm
+    {
+        margin-top: 70px;
+        min-width: 50%;
+        position: absolute;
+    }
+   
+    .containerr .cardd .contrr
+    {
+        position: relative;
+        width: 100%;
+        background:#fff;
+        box-shadow: none;
+       margin-top: 100px;
+
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+section.trust
+{
+  background-color: #fff;
+ 
+  margin-top: 60px;
+  top: -60px;
+  margin-bottom: 90px;
+}
+
+
+
+
+
+.bottom{
+  width: 100%;
+  max-width: 1080px;
+  max-width: 100%;
+  
+  position: relative;
+  display: flex;
+}
+
+.bot{
+  
+  text-align: center;
+  padding: 20px;
+  width: 40vh;
+  width: 100%;
+
+  max-width: 100%;
+
+}
+
+.bot1
+{
+ 
+ 
+
+  transform: translateX(-50%);
+
+  width: 20vh;
+  width: 50%;
+  max-width: 100%;
+  margin-left: 50px;
+}
+
+
+
+
+.bot2
+{
+
+ 
+  transform: translateX(-50%);
+  width: 20vh;
+  width: 50%;
+  max-width: 100%;
+ 
+}
+
+
+
+
+
+
+.bot3
+{
+ 
+  transform: translateX(50%);
+ 
+  width: 20vh;
+  width: 50%;
+  max-width:100%;
+  
+}
+
+
+.bot4
+{
+  width: 20vh;
+  width: 50%;
+  max-width: 100%;
+ 
+}
+
+
+
+
+
+
+
+
+.sl img
+{
+ 
+    max-width: 100%;
+    margin-left: 50px;
+    
+    transition: 0.2s ease-in-out;
+}
+
+
+
+
+
+.bot h4{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+  font-family: 'Share Tech', sans-serif;
+  margin: 15px 0;
+  margin-left: 50px;
+}
+
+.bot p{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 50px;
+}
+
+
+
+
+.sl
+{
+ 
+ z-index: 1;
+ top: 10px;
+
+
+ height: calc(100%-20%);
+ 
+
+
+
+  justify-content: center;
+  align-items: center;
+  overflow:visible;
+ 
+  transition: 0.5s ease-in-out;
+
+
+
+}
+
+
+
+
+
+.bot h4
+{
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+.main{
+  top: 400px;
+  margin-top: 30px;
+  width:100%;
+  float:left;}
+  
+  
+  .one{
+    padding-right: 10px;
+   
+    text-transform: uppercase;
+  width:40%;
+  float:left;
+  margin-left: 45px;
+  }
+  
+  
+  .two{float:right;
+  width:40%;
+  padding-left: 10px;
+ 
+  margin-right: 45px;
+  text-transform: uppercase;
+  }
+  .accordion {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 2px solid GRAY;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    text-transform: uppercase;
+  }
+  
+  
+  .accordion2 {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid transparent transparent;
+  
+ 
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    text-transform: uppercase;
+  }
+  
+  
+  
+  
+  
+  
+  .active, .accordion:hover {
+  
+    background-color: transparent;
+   
+  }
+  
+  
+  .active, .accordion2:hover {
+    background-color: transparent;
+  }
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    color :blue;
+    font-weight: bold;
+    float:right;
+    margin-left: 5px;
+
+
+    width: 16px;
+    color: #f1f1f1;
+    background-color: blue;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  
+  
+  .accordion2:after {
+    content: '\002B';
+    color: #777;
+    color :blue;
+    font-weight: bold;
+    float:right;
+    margin-left: 5px;
+    
+    width: 16px;
+    color: #f1f1f1;
+    background-color: blue;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+
+
+  }
+  
+  .active:after {
+    content: "\2212";
+    
+  }
+  
+  .panel {
+  
+    background-color:#cccccc;
+    background-color:#ffffff;
+    max-height: 0;
+     width: 100%;
+      border: 1px solid grey;
+     
+     overflow:hidden;
+    transition: max-height 0.2s ease-out;
+    text-transform:initial;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------- */
+
+section.Portfolio{
+ 
+  width: 100%;
+  max-width: 100%;
+}
+
+.tt {
+  width: 100%;
+ 
+  margin-left: 200px;
+  margin-bottom: 100px;
+  background-color: rgb(123, 110, 110);
+
+
+ position: relative;
+
+}
+
+
+
+ 
+.vb{
+  text-align: center;
+}
+
+
+
+.tt {  width: 100%;
+ 
+  background-color: rgb(123, 110, 110);
+
+ position:absolute;
+  
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+
+
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  z-index: 1;
+  min-height: 1px;
+ 
+
+
+
+
+ 
+  margin-bottom: 100px;
+
+  background-color:transparent;
+  text-align: center;
+}
+
+
+
+/* ------------------- */
+
+
+.ff {
+  float: left;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  z-index: 1;
+  min-height: 1px;
+
+  mix-blend-mode: unset!important;
+
+  font-size: 20px;
+  font-weight: 500;
+ 
+  line-height: 1.7em!important;
+  background-color: transparent;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border: 2px solid;
+  border-radius: 3px;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-property: all!important;
+  transition-property: all!important;
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 0px 0px 1px #15314e;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+a.jojo {
+
+  color: #15314e!important;
+  border-width: 14px!important;
+    border-color: rgba(0,0,0,0);
+    border-radius: 0px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 700!important;
+    text-transform: uppercase!important;
+    padding-right: 2em;
+    padding-left: 0.7em;
+    background-color: #ffffff;
+     width: 100%;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+}
+.et_pb_button_module_wrapper>a {
+  display: inline-block;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+section.mainWebsite{
+  margin-bottom: -200px;
+  margin-bottom: 200px;
+}
+
+
+.mWebsite{
+ 
+  
+  width:100%;
+  height: auto;
+
+  }
+  
+  .mone1{
+  width:50%;
+  float:left;
+  padding-left: 100px;
+  padding-top: 80px;
+  padding-bottom: 40px
+  
+  }
+  
+  .mone2{
+  width:50%;
+  float:left;
+  
+  }
+  
+  .Website h4{
+      font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: rgba(12,12,12,0.27)!important;
+      letter-spacing: 3px;
+      line-height: 1.8em;
+          padding-bottom: 10px;
+  }
+  
+  
+  
+   h3.Deluxe {
+      font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+      font-weight: 700;
+      font-size: 35px;
+      color: #15314e!important;
+      line-height: 1.5em;
+      padding-bottom: 10px;
+  }
+  
+  
+  
+  p.p1{
+  text-align: justify;
+  padding-bottom: 1em;
+   color: #15314e!important;
+  
+  }
+  
+  
+  p.p2{
+  text-align: justify;
+  
+   color: #15314e!important;
+  
+  }
+  
+  p:not(.has-background):last-of-type {
+      padding-bottom: 0;
+  }
+  
+  .Website{
+    padding-bottom: 1em;
+width: 60%;
+
+  }
+  
+  .truth{
+      color: #15314e!important;
+      text-align: left;
+      width: 60%;
+      padding-bottom: 1em;
+  }
+  
+  
+  
+  
+  .truth>:last-child {
+      padding-bottom: 0;
+  }
+  
+  .truth ul{
+      list-style-type: disc;
+      padding: 0 0 23px 1em;
+      line-height: 26px;
+  }
+  
+  
+  .dev1{
+      background-image: linear-gradient(90deg,rgba(245,246,249,0) 50%,#f5f6f9 50%);
+      padding-top: 60px;
+      padding-bottom: 60px;
+  }
+  
+  
+  .dev2{
+       margin-right: -20%!important;   
+  }
+  
+  
+  span.dev12{
+  
+  display: block;
+        width: 100%;
+      max-width: 100%;
+  
+  }
+  
+  img.deluxee{
+  
+    display: block;
+  
+     position: relative;
+   width: 100%;
+      max-width: 100%;
+      height: auto;
+  }
+  
+
+/* -------------------------------------------------------------------------------------- */
+
+
+section.imgparagragh{
+
+  width: 100%;
+  margin-top: 1000px;
+  max-width: 100%;
+}
+
+
+.imgp{
+  width: 100%;
+  max-width: 100%;
+  /* float: left; */
+}
+
+
+
+
+.iimmgs{
+  width: 50%;
+  float: left;
+  background-image: linear-gradient(90deg,#f5f6f9 50%,rgba(245,246,249,0) 50%);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+
+
+}
+
+
+
+
+img.rigion{
+  max-width: 100%;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.mp{
+  right: -50px;
+  width: 50%;
+  float: left;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-left: 150px;
+  text-align: left;
+}
+
+.hforthreep{
+  color: #15314e!important;
+  text-align: left;
+  width: 60%;
+  /* text-align: center; */
+}
+.hforthreep h4{
+  font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: rgba(12,12,12,0.27)!important;
+  letter-spacing: 3px;
+  line-height: 1.8em;
+}
+.hforthreep h3{
+  font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  color: #15314e!important;
+  line-height: 1.5em;
+}
+
+
+
+
+p.ponly{
+  font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+  line-height: 2em;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* ---------------------------------------footer--------------------------- */
+
+
+
+
+
+
+
+
+
+footer{
+  background-image: linear-gradient(140deg,#004872 0%,rgba(41,17,96,0.8) 100%),url(https://www.cloudtechiq.com/wp-content/uploads/2020/07/it-services-06.jpg)!important;
+  padding-top: 120px;
+  padding-right: 0px;
+  padding-bottom: 120px;
+  padding-left: 0px;
+  position: relative;
+  background-color: #fff;
+  background-position: 1%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0;
+  outline: 0;
+  margin: 0;
+top: 250px;
+width: 100%;
+max-width: 100%;
+  float: left;
+}
+
+.form-left h1{
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: 'Share Tech', sans-serif;
+  margin-bottom: 15px;
+}
+
+
+.formm{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 25vh;
+  float: left;
+}
+
+.input-row{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.input-row .input-group{
+  flex-basis: 45%;
+}
+
+
+input{
+  background-color: rgba(0,0,0,0);
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  outline: none;
+  padding-bottom: 5px;
+  margin: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.8em;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+
+}
+
+select{
+  background-color: rgba(0,0,0,0);
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  outline: none;
+  padding-bottom: 5px;
+  margin: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.8em;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+}
+
+textarea{
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
+  width: 50%;
+  outline: none;
+  padding: 10px;
+  margin: 20px 33px;
+  border-bottom: 2px solid #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.8em;
+  text-align: left;
+}
+
+::placeholder{
+  color: #ffffff;
+}
+
+.form-right{
+  padding: 20px 0;
+}
+
+.cp{
+  margin: 15px 0;
+}
+
+.cp p{
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: 'Share Tech', sans-serif;
+  margin: 15px 0;
+}
+
+.cp i{
+  font-size: 24px;
+  color: #ffa727;
+}
+
+.cp ul{
+  list-style: none;
+  margin-left: 25px;
+
+}
+
+.cp ul li{
+  font-size: 16px;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 0;
+}
+
+
+.under-form{
+  display: flex;
+  justify-content: end;
+}
+
+.under-form span{
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.8em;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+}
+
+.under-form input{
+  background-color: rgba(0,0,0,0);
+  width: 30px;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  outline: none;
+  padding-bottom: 5px;
+  margin: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.8em;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+}
+
+.under-form button{
+  color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  letter-spacing: 5px;
+  font-size: 15px;
+  font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 700!important;
+  text-transform: uppercase;
+  background-color: #ffa727;
+  padding: 20px;
+  cursor: pointer;
+}
+
+
+.butten2{
+  position: absolute;
+  top: 0%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 100%;
+  justify-content: end;
+  
+}
+
+.butten2 a{
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.btnn11{
+  background-image: linear-gradient(270deg,#ffffff 0%,#2573f9 100%);
+  background-color: #2573f9;
+  border-radius: 100px 0 0 100px;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-bottom: 12px;
+  padding-right: 50%;
+  text-align: left;
+}
+
+.btnn22{
+  background-color: #307af9;
+  border-radius: 50px;
+  padding: 20px;
+  margin-right: 80px;
+}
+
+.btnn33{
+  background-color: #307af9;
+  border-radius: 50px;
+  padding: 20px;
+  margin-right: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+  
+@media only screen and  ( max-width: 545px ) {
+
+
+
+
+    
+    
+.section-header {
+  max-width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 154px;
+
+
+
+}
+  .left img {
+    width: 89px;
+    height: 70px;
+    /* padding-left: 21px;
+    margin-left: 62px; */
+    margin-left: 6px;
+    padding-left: 0;
+}
+
+
+
+
+
+.container-header {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right {
+  margin-top: -38px;
+  width: 254px;
+  padding-left: 97px;
+  /* margin-left: 24px; */
+  /* padding-right: 0px; */
+  padding-top: -20px;
+}
+
+.right ul {
+ 
+  margin: 20px 0;
+}
+
+.right ul li {
+  width: 32px;
+  margin-right: 0px;
+}
+
+
+.right ul img {
+  width: 30px;
+ 
+}
+
+.right a {
+  color: black;
+  padding: 12px 0;
+  text-decoration: none;
+  display: block;
+}
+
+.header.hddr{
+  top: 120px;
+}
+
+
+}
+
+
+
+
+
+
+@media only screen and(min-width:400px) and ( max-width: 470px ) {
+
+
+
+  .one {
+   
+    margin-left: 30px;
+}
+
+.two {
+ 
+  margin-right: 30px;
+
+}
+
+
+.container-header2{
+  display: none;
+}
+
+}
+
+
+
+
+
+@media only screen and(min-width:1000px) and ( max-width: 1300px ) {
+
+
+
+  .iimmgs{
+      width: 50%;
+      max-width: 100%;
+      padding-top: 70px;
+      padding-bottom: 70px;
+     
+     
+    }
+    
+    
+    .mp{
+     
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      padding-left: 100px;
+    
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media   (max-width: 991px){
+header.hddr{
+    padding:20px ;
+
+}
+
+header.hddr label{
+    /* font-size: 20px;
+    color: #333;
+    cursor: pointer; */
+    display: initial;
+}
+
+header.hddr .navbar{
+  position: absolute;
+  top:100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  display: none;
+}
+header.hddr .navbar{
+height: 400px;
+border-radius: 0 0 50px 50px;
+position: absolute;
+top: 0%;
+left: 0;
+right: 0;
+background-color: #fff;
+border-top: 1px solid rgba(0, 0, 0, .1);
+display: none;
+width: 90%;
+z-index: 900000000;
+margin-right: auto;
+margin-left: auto;
+z-index: -1;
+}
+header.hddr .navbar ul li{
+  width: 100%;
+  top: 72px;
+
+}
+
+#mennu-bar:checked ~ .navbar{
+display: initial;
+}
+
+.container-header2{
+display: none;
+}
+
+
+.section-header {
+
+ border-radius: 0;
+overflow-x: hidden;
+overflow-y: hidden;
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+
+
+
+header.hddr {
+border-radius: 0 0 50px 50px;
+width: 90%;
+margin-left: 5%;
+position: fixed;
+top: 60px;
+left: 0;
+right: 0;
+background-color: #e9e9e9;
+box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+/* padding: 0px 7%; */
+display: flex;
+align-items: center;
+justify-content: space-between;
+/* z-index: 100; */
+display: flex;
+justify-content: center;
+background-color: white;
+}
+header.hddr:hover{
+border-radius: 0;
+}
+
+
+}
+
+
+
+
+
+
+@media only screen and(min-width:800px) and ( max-width: 1000px ) {
+
+
+
+  .iimmgs{
+      width: 100%;
+      max-width: 100%;
+      padding-top: 70px;
+      padding-bottom: 70px;
+     
+   
+    }
+    
+    
+    .mp{
+     
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      padding-left: 100px;
+   
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and   ( min-width: 500px )  and   ( max-width: 850px )            {
+  .butten {
+   
+    left: 25%;}
+
+
+
+
+
+
+
+
+
+    .butten2 {
+      position: absolute;
+      top: 0%;
+      left: 77%;
+    
+     
+    }
+
+
+    .btn3 {
+      position: absolute;
+    
+      left: 100%;
+  }
+
+
+  .container-header2{
+    display: none;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and  ( max-width: 800px ) {
+
+
+
+
+  .mone1{
+      width:100%;
+    
+     padding-left: 10px;
+     padding-right: 10px;
+      
+      
+      }
+      
+      .mone2{
+      width:100%;
+      max-width: 100%;
+      padding-bottom: 90px;
+      
+      }
+      
+
+
+
+
+
+      .iimmgs{
+          width: 100%;
+          max-width: 100%;
+          padding-top: 90px;
+          padding-bottom: 90px;
+       
+        }
+        
+        
+        .mp{
+         
+          width: 100%;
+          max-width: 100%;
+          text-align: center;
+          padding-left: 40px
+        
+
+
+
+
+}
+
+
+
+
+.container-header2{
+display: none;
+}
+}
+
+
+
+
+
+
+@media only screen and   ( max-width: 500px ){
+
+
+  .content {
+    position: relative;
+    text-align: center;
+    height: 586px;
+    width: 100%;
+   
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.centered {
+  width: 120%;
+  position: absolute;
+  top: 69%;
+  
+  transform: translate(-50%, -50%);
+  color: #f1f1f1;
+  padding: 40px;
+}
+
+.centered {
+  width: 120%;
+  position: absolute;
+  top: 69%;
+  
+  transform: translate(-50%, -50%);
+  color: #f1f1f1;
+  padding: 40px;
+}
+
+
+.centered h1 {
+ 
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 1px;
+ 
+  letter-spacing: 0.4px;
+}
+
+
+
+
+.centered p {
+  height: 324px;
+  /* margin-left: 18px; */
+  
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+ 
+  text-align: left;
+}
+
+
+
+
+.centered p {
+  height: 324px;
+  /* margin-left: 18px; */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+
+  text-align: center;
+}
+
+
+.butten {
+  position: absolute;
+  top: 105%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 900;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 16%;
+  padding-right: 0px;
+}
+
+
+
+
+
+.butten {
+  position: absolute;
+  top: 105%;
+  left: 10%;
+ 
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 900;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 16%;
+  padding-right: 0px;
+}
+
+.btn1 {
+  position: absolute;
+  padding-top: 22px;
+  padding-right: 34px;
+  padding-bottom: 20px;
+  padding-left: 33%;
+  text-align: right;
+  margin-right: 0px;
+  margin-left: 3px;
+  font-size: 14px;
+}
+
+
+
+
+.btn1 {
+  top: -47px;
+  position: absolute;
+  padding-top: 20px;
+  padding-right: 34px;
+  padding-bottom: 20px;
+  padding-left: 33%;
+  text-align: right;
+  margin-right: 0px;
+  margin-left: 3px;
+  font-size: 14px;
+ 
+}
+
+h4.bbttnn1 {
+  margin-left: 0px;
+}
+
+.btn2 {
+  margin-top: 55px;
+  position: absolute;
+  margin-left: 189px;
+  padding-left: 11px;
+  padding-right: 17px;
+  padding-top: 12px;
+  padding-right: 14px;
+  padding-bottom: 9px;
+
+}
+
+
+
+
+
+.btn2 {
+  margin-top: 52px;
+  position: absolute;
+  margin-left: 173px;
+  padding-left: 11px;
+  padding-right: 17px;
+  padding-top: 12px;
+  padding-right: 14px;
+  padding-bottom: 9px;
+  
+}
+
+.btn3 {
+  position: absolute;
+  padding-left: 7px;
+
+  padding-bottom: -1px;
+  padding-left: -4%;
+  text-align: right;
+  margin-right: 0px;
+
+  font-size: 13px;
+  margin-top: 100px;
+
+}
+
+
+.btn3 {
+  position: absolute;
+  padding-left: 7px;
+  padding-bottom: -1px;
+  padding-left: -4%;
+  text-align: right;
+  margin-right: 0px;
+
+  font-size: 13px;
+  margin-top: 122px;
+  left: 50%;
+}
+
+
+
+.butten2 {
+  position: absolute;
+  top: 0%;
+  left: 77%;
+
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 100%;
+  justify-content: end;
+}
+
+
+.btnn33 {
+
+padding: 18px;
+margin-right: 130px;
+position: absolute;
+top: -73px;
+}
+
+
+
+
+.btnn22 {
+position: absolute;
+
+border-radius: 50px;
+padding: 16px;
+margin-right: 364px;
+
+}
+
+
+
+.btnn11 {
+margin-right: -61px;
+position: absolute;
+
+padding-top: 30px;
+padding-left: 35px;
+padding-bottom: 20px;
+padding-right: 50%;
+
+
+}
+
+
+.container-header2{
+  display: none;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and  ( max-width: 545px ) {
+
+
+
+
+  
+  
+.section-header {
+  max-width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 154px;
+
+
+
+}
+  .left img {
+    width: 89px;
+    height: 70px;
+    /* padding-left: 21px;
+    margin-left: 62px; */
+}
+
+
+
+
+
+.container-header {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right {
+  margin-top: -38px;
+  width: 254px;
+  padding-left: 97px;
+  /* margin-left: 24px; */
+  /* padding-right: 0px; */
+  padding-top: -20px;
+}
+
+.right ul {
+ 
+  margin: 20px 0;
+}
+
+.right ul li {
+  width: 32px;
+  margin-right: 0px;
+}
+
+
+.right ul img {
+  width: 30px;
+ 
+}
+
+.right a {
+  color: black;
+  padding: 12px 0;
+  text-decoration: none;
+  display: block;
+}
+
+.header.hddr{
+  top: 120px;
+}
+
+
+}
+@media only screen and  ( max-width: 400px ) {
+
+
+
+header.hddr{
+top: 120px;
+
+}
+
+
+
+  .section-header {
+    max-width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 154px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .section-header {
+    max-width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 154px;
+
+
+
+  }
+    .left img {
+      width: 89px;
+      height: 70px;
+      /* padding-left: 21px;
+      margin-left: 62px; */
+  }
+  
+  
+  
+  
+  
+  .container-header {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .right {
+    margin-top: -38px;
+    width: 254px;
+    padding-left: 97px;
+    /* margin-left: 24px; */
+    /* padding-right: 0px; */
+    padding-top: -20px;
+  }
+  
+  .right ul {
+   
+    margin: 20px 0;
+  }
+  
+  .right ul li {
+    width: 32px;
+    margin-right: 0px;
+  }
+  
+  
+  .right ul img {
+    width: 30px;
+   
+  }
+  
+  .right a {
+    color: black;
+    padding: 12px 0;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .container-header {
+    height: 30px;
+   
+  }
+  
+  .container-header2 {
+    margin-left:10px;
+      position: relative;
+      /* display: inline-block; */
+      width: 401px;
+  }
+  
+  
+  .container-header2 {
+    height: 178px;
+    margin-left: 0;
+    position: relative;
+    /* display: inline-block; */
+    width: 100%;
+    max-width: 100%;
+  }
+    
+  
+    
+    .container-header2 a {
+      color: black;
+      padding: 12px 0;
+      text-decoration: none;
+      
+      display: block;
+    }
+    .container-header2 ul{
+        list-style: none;
+        flex-direction: column;
+    }
+  
+  
+  
+  
+    .container-header2 ul {
+    
+      list-style: none;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 100%;
+    max-width: 100%;
+  }
+  
+  
+  
+  .container-header2 ul {
+    
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: 6px;
+    max-width: 100%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .container-header2 ul li {
+    padding: 0px 9px;
+   
+    font-size: 10px;
+   
+    font-weight: 900;
+  }
+     
+  
+  
+  .container-header2{
+    display: none;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ------------------------------- */
+  h2.center3 {
+    width: 100%;}
+  
+  
+    span.center5 {
+
+        width:90% ;
+      word-break:keep-all;
+      overflow-wrap: break-word;
+    }
+
+    img.center4 {
+     
+      margin-top: -33px;
+      max-width: 100%;
+     
+      width: 90%;
+    
+     
+  }
+  
+  
+  
+  img.complete5 {
+    max-width: 100%;
+    height: auto;
+    width: 100% !important
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ------------------------------- */
+  
+  
+  
+  
+  
+  
+  
+      p.ponly {
+          font-size: 13px;
+          font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+          line-height: 2em;
+          text-align: justify;
+          width: 150%;
+      }
+  
+      .containerr .cardd {
+          width: 200px;}
+  
+  
+  
+      .main{
+         
+          width:100%;
+  max-width: 100%;
+  
+  
+  
+          float:left;}
+  
+  
+  .ff{
+      margin-left: -175px;
+  }
+  
+          .one{
+              padding-right: 10px;
+             
+            width:100%;
+            max-width: 100%;
+            margin-left: 10px !important;
+            margin-bottom: 20px;
+        
+            }
+  
+            .two{
+              width:100%;
+              max-width: 100%;
+            margin-right: 5px !important;
+             
+              }
+  
+  
+              .centerr2 h2{
+                  margin-bottom: 125px;
+              }
+  
+              .onne{
+               text-align: justify;
+                  width: 100%;
+                  max-width: 100%;
+                  padding-right: 10px;
+                
+                }
+                .twwo{
+                  width: 100%;
+                  max-width: 100%;
+                padding-left: 10px;
+                 
+                }
+  
+  
+  
+  
+  
+                .icon1{
+                  width: 100%;
+  
+                  
+                }
+                
+                img.iconnn1{
+                  display: block;
+                  position: relative;
+                  max-width: 100%;
+                  bottom: 49px;
+                  margin-left: 7px;
+                  float: left;
+                 
+                }
+                
+                
+                .etch3{
+                    width: 95%;
+      float: right;
+      text-align: left;
+      text-align: left;
+      margin-right: 4px;
+      padding-bottom: 214px;
+                }
+                .etch3 h3{
+                  color:#333;
+                
+                  font-weight: 700;
+                  line-height: 1.4em;
+                  font-size: 22px;
+                }
+                
+                .etch31{
+                  margin-bottom: 10px;
+                }
+                
+                .icon2{
+                  width: 100%;
+                 
+                }
+                img.iconnn2{
+                  display: block;
+                  position: relative;
+                 
+                float: left;
+                bottom: 150px;
+               
+                max-width: 100%;
+                
+                z-index: 5;
+                }
+                
+                
+                
+                .etch33{
+                 
+          
+                  width: 100%;
+                  
+                 
+                  margin-left: -105px;
+                   
+                } 
+                .etch33 h3{
+                  color: #333;
+                  font-weight: 700;
+                    line-height: 1.4em;
+                    font-size: 22px;
+                }
+                .etch33 h3{
+                  text-align:left;
+                
+                    
+                 } 
+                .etch331{
+                  margin-bottom: 10px;
+                
+                    
+                 } 
+                .etch332{
+                  margin-bottom: 10px;
+                
+                    
+                 } 
+  
+  
+  
+                 
+                 footer{
+                 
+                 
+                top: 250px;
+                width: 100%;
+                max-width: 100%;
+                
+                } 
+  
+                .formm {
+                  
+                 
+                  margin-left: 10px;
+              }
+  
+              .form-right {
+                margin-left: -146px;
+                margin-top: 680px;
+              
+            }
+  
+  
+            .form-left h1 {
+              font-size: 27px;
+             
+              margin-bottom: 70px;
+          }
+  
+  
+          .input-row .input-group {
+            flex-basis: 100%;
+        }
+  
+  
+  
+  
+  
+        textarea {
+        
+          width: 70%;
+         
+          letter-spacing: 4px;
+          line-height: 0.8em;
+        
+      }
+  
+      .under-form button {
+       
+        letter-spacing: 9px;
+        font-size: 15px;
+       
+        font-weight: 900!important;
+       
+        padding: 10px;
+       
+    }
+  
+  
+    .butten2 {
+      position: absolute;
+      top: 0%;
+      left: 66%;
+   
+      font-size: 14px;
+      font-weight: 700;
+      width: 100%;
+      max-width: 100%;
+      justify-content: end;
+  }
+  
+  
+  .btnn33 {
+   
+    padding: 18px;
+    margin-right: 130px;
+    position: absolute;
+    top: -73px;
+  }
+  
+  
+  
+  
+  .btnn22 {
+    position: absolute;
+  
+    border-radius: 50px;
+    padding: 16px;
+    margin-right: 364px;
+  
+  }
+  
+  
+  
+  .btnn22 {
+    position: absolute;
+    border-radius: 50px;
+    padding: 16px;
+    margin-right: 173px;
+    top: 14px;
+  }
+  
+  
+  
+  .btnn11 {
+    margin-right: -61px;
+    position: absolute;
+  
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-bottom: 20px;
+    padding-right: 50%;
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen  and ( min-width: 400px )and ( max-width: 470px )  {
+
+
+
+      .one {
+       
+        margin-left: 30px;
+    }
+    
+    .two {
+     
+      margin-right: 30px;
+    
+    }
+    .container-header2{
+    display: none;
+    
+    }
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and  ( max-width: 545px ) {
+
+
+
+
+  
+  
+      .section-header {
+        max-width: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 154px;
+    
+    
+    
+      }
+        .left img {
+          width: 89px;
+          height: 70px;
+          /* padding-left: 21px;
+          margin-left: 62px; */
+      }
+      
+      
+      
+      
+      
+      .container-header {
+        position: relative;
+        display: inline-block;
+        height: 30px;
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      .right {
+        margin-top: -38px;
+        width: 254px;
+        padding-left: 97px;
+        /* margin-left: 24px; */
+        /* padding-right: 0px; */
+        padding-top: -20px;
+      }
+      
+      .right ul {
+       
+        margin: 20px 0;
+      }
+      
+      .right ul li {
+        width: 32px;
+        margin-right: 0px;
+      }
+      
+      
+      .right ul img {
+        width: 30px;
+       
+      }
+      
+      .right a {
+        color: black;
+        padding: 12px 0;
+        text-decoration: none;
+        display: block;
+      }
+      
+      header.hddr{
+        top: 120px;
+      }
+    
+    
+    }
+
+
+
+
+
+
+
+
+
+
+ 
+ </style>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Prata&family=Share+Tech&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Cloud Technology</title>
+</head>
+
+
+
+
+
+<section class="head">
+    <div class="section-header">
+      <div class="container-header">
+        <div class="left">
+          <img src="./images/logo.png">
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="https://www.facebook.com/cloudtechnology"><img src="icons/facebook.png"></a></li>
+            <li><a href="#"><img src="icons/twitter.png"></a></li>
+            <li><a href="https://www.linkedin.com/company/cloudtechiq"><img src="icons/linkedin.png"></a></li>
+            <li><a href="https://www.instagram.com/cloudtech.iq/"><img src="icons/insta.png"></a></li>
+            <li><a href="skype:?call"><img src="icons/skype.png"></a></li>
+            <li><a href="https://www.youtube.com/c/CloudTechnologyIQ"><img src="icons/youtube.png"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-header2">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="software-development.html">Software Development</a></li>
+          <li><a href="EDUCATION.html">Education</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Business Solutions</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <header class="hddr">
+        <input type="checkbox"  id="mennu-bar">
+        <label for="mennu-bar">≡</label>
+       
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#">home</a></li>
+                <li> <a href="#">Profile</a></li>
+                <li> <a href="software-development.html">Software Development</a></li>
+                <li> <a href="EDUCATION.html">Education</a></li>
+                <li><a href="#">News</a></li>
+                <li> <a href="#">Business Solutions</a></li>
+                <li> <a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+  
+  </section>
+
+
+
+
+
+
+
+
+  
+  <section class="content">
+    <div class="centered"  data-aos="zoom-in"  data-aos-duration="10">
+      <h1>Software Development</h1>
+      <p>We can undertake the creation of your own management system or application that your business needs, All software we develop, are always designed based on customers’ requirements and user experience.</p>
+    </div>
+    <div class="butten">
+      <div class="btn1" data-aos="slide-right"><h4 class="bbttnn1"><a class="OA" href="https://www.cloudtechiq.com/portfoilio/">PORTFOILIO</a></h4></div>
+      <div class="btn2"  data-aos="slide-right"><h4><a href="https://www.cloudtechiq.com/contact-us/">CONTACT US</a></h4></div>
+      <div class="btn3" data-aos="slide-right"><h4><a href="https://t.me/cloudtechiq">LIVE CHAT</a></h4></div>
+    </div>  
+  </section>
+ 
+
+  <section class="center1">
+				<div  class="center2"   >	
+    <h2 class="center3"  data-aos="flip-right" >Website Design & Development Services.</h2>
+    
+   
+ 
+    
+  
+  
+ 
+    <span class="center5"   data-aos="flip-right"   delay: 12S, >We design and develop your website based on your own needs! Using the latest technologies in the field of online programming, we create fast and modern websites, aiming to provide the best possible experience for the visitor.</span>
+   
+    <img     class="center4"    data-aos="flip-left"   loading="lazy" src="https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-dev-17.png" />
+</div>
+
+
+
+
+
+</section>
+
+
+
+<section class="centerr1">
+
+
+    <div class="centerr2"><h2 data-aos="zoom-out-up"  >Web Packages &amp;<br /> à La Carte Services</h2></div>
+
+<div class="mainCon">
+  <div class="onne">
+    <div class="icon1">
+        <span class="iconn1 "><img  data-aos="zoom-out-up"   class="iconnn1" loading="lazy" width="99" height="100" src="https://www.cloudtechiq.com/wp-content/uploads/2020/10/web-icon-design-21.png" alt="" title="web-icon-design-21"  /></span>
+        </div>
+
+
+        
+
+<div class=" etch3 " data-aos="slide-right"  ><h3>Website Development &amp; SEO</h3>
+    <p  class="etch31"  >The relationship between web Development and SEO is a complicated one, and many site owners don’t quite understand it. Considering that design has to do with visual aspects, and SEO affects how a site is found, it may seem like they’re completely separate sides of an equation.</p>
+    <p  class="etch32">We design and develop your website based on your own needs! Using the latest technologies in the field of online programming, we create fast and modern websites, aiming to provide the best possible experience for the visitor.</p>
+   
+</div>
+
+
+</div>
+<div class="twwo">
+
+   <div class="icon2">
+ <span class="iconn2"><img  data-aos="zoom-out-up"   class="iconnn2" loading="lazy" width="100" height="100" src="https://www.cloudtechiq.com/wp-content/uploads/2020/10/web-icon-code-2-11.png" alt="" title="web-icon-code-2-11"  /></span>
+    </div>
+
+
+
+
+    <div class="etch33 "   data-aos="slide-left" ><h3>Website Design &amp; Brand Strategy</h3>
+        <p class=" etch331">Every website we create is unique, like your enterprise! For this reason we do not use blueprints but we design every website from scratch, based on your needs and standards.</p>
+        <p class=" etch332">The design process includes all the necessary stages, from the development of the logo to the complete presentation of your website.</p>
+        <p class=" etch333">By creating a unique design for your website, our aim is to promote your business services.</p>
+        <p>&nbsp;</p></div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ----------------------------------------------------------- -->
+
+
+
+<div class="main"> 
+  <div class="one"     data-aos="fade-up-left">
+  
+  <button class="accordion">Website Development</button>
+  <div class="panel">
+    <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
+  </div>
+  
+  <button class="accordion">Security Audit</button>
+  <div class="panel">
+    <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
+  </div>
+  
+  <button class="accordion">Website Support</button>
+  <div class="panel">
+    <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
+  </div>
+  
+  
+  <button class="accordion">Basic SEO</button>
+  <div class="panel">
+    <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
+  </div>
+  
+  <button class="accordion">API Development</button>
+  <div class="panel">
+    <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
+  </div>
+  
+  </div>
+  
+  
+  <div class="two"  data-aos="fade-up-right" >
+  <button class="accordion2">logo Design</button>
+  <div class="panel">
+    <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
+  </div>
+  
+  <button class="accordion2">Single Page Design</button>
+  <div class="panel">
+    <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
+  </div>
+  
+  <button class="accordion2">Information Architecture</button>
+  <div class="panel">
+    <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
+  </div>
+  
+  <button class="accordion2">Style Guide</button>
+  <div class="panel">
+    <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
+  </div>
+  
+  <button class="accordion2">Brand Strategy</button>
+  <div class="panel">
+    <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
+  </div>
+  </div>
+  </div>
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+  
+  
+  <script>
+  var acc = document.getElementsByClassName("accordion2");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+  
+
+
+
+
+
+
+<!-- ----------------------------------------------------------- -->
+
+
+
+
+
+
+ 
+    <Section   class="complete" >
+    
+    
+      <div class="complete1"><h2   data-aos="flip-left"  class="complete2">COmplete Website Packages</h2></div></div>
+    
+    
+    
+      <div class="comlete3">
+    
+    
+    
+    
+        <span class="complete4"> <img    data-aos="flip-left"   class="complete5" loading="lazy" width="1280" height="584" src="https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-dev-26.jpg" alt="" title="" srcset="https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-dev-26.jpg 1280w, https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-dev-26-980x447.jpg 980w, https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-dev-26-480x219.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1280px, 100vw" />
+        </span>
+        </div>
+    
+    
+    
+    </Section>
+    
+    
+  
+    <section class="con">
+      <div class="containerr">
+        <div class="cardd"  data-aos="slide-left" >
+            <div class="imagemm">
+                                <img data-aos="fade-up-right"  src="https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-icon-light-bulb.png" alt="">
+            </div>
+            <div class="contrr">
+          <div>
+              <h3 data-aos="fade-up-right" >Define</h3>
+              <p>Analysing the customer needs is perhaps the most important basis for developing an effective website.</p>
+              
+          </div>
+            </div>
+        </div>
+        <div class="cardd"  data-aos="slide-left">
+            <div class="imagemm">
+                                <img  data-aos="fade-up-right"  src="https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-icon-design.png" alt="">
+            </div>
+            <div class="contrr">
+          <div>
+              <h3 data-aos="fade-up-right" >Design</h3>
+              <p>The design process includes all the necessary stages, from the development of the logo to the complete presentation of your website.</p>
+              
+          </div>
+            </div>
+        </div>
+        <div class="cardd"  data-aos="slide-right">
+            <div class="imagemm">
+                                <img data-aos="fade-up-right"  src="https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-icon-adjust.png" alt="">
+            </div>
+            <div class="contrr">
+          <div>
+              <h3 data-aos="fade-up-right" >Refine</h3>
+              <p>All the websites we create are supported by any device,  and are based on the latest, modern versions of programming languages.</p>
+          
+          </div>
+            </div>
+        </div>
+        <div class="cardd"  data-aos="slide-right">
+            <div class="imagemm">
+                                <img data-aos="fade-up-right"  src="https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-icon-code.png" alt="">
+            </div>
+            <div class="contrr">
+          <div>
+              <h3 data-aos="fade-up-right" >Build</h3>
+              <p>The back end and the front end created with the most reliable and relevant modern techs, any browser, any device, a thought-out architecture.</p>
+              
+          </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="Portfolio">
+
+      <div class="tt"  data-aos="slide-left">
+      <div class="ff" >
+      
+      <div class="vb "  >
+      <a class="jojo" href="https://www.cloudtechiq.com/portfoilio/" data-icon="&#x39;">My Portfolio  &#187;</a>
+      </div>
+      </div>
+      
+      
+      
+      
+      </div>
+      
+      </section>
+
+
+
+
+
+      <section class="mainWebsite">
+
+
+        <div class="mWebsite">
+        
+        
+        <div class="mone1"  data-aos="slide-left">
+        <div class="Website"><h4>Website Redesign</h4>
+        <h3 class="Deluxe">Deluxe Full Service Website Package</h3>
+        <p style="text-align: justify;"   class="p1">Much like outdated home decor, sometimes we have to strip the “walls” of our websites and update things—or at the very least, apply a fresh coat of paint in a more modern color. From time to time these renovations are necessary in our homes and on our websites.</p>
+        <p style="text-align: justify;"    class="p2">Are you aware of the current trends in web design—what’s in and what’s out? More importantly, do you know what trends seem to be the most effective?</p></div>
+        
+        
+        
+        
+        
+        <div class="truth"><p>The truth is, in 2020, functionality matters. How so? Consider this:</p>
+        <ul>
+        <li>	Ninety-three percent of consumers have left a website because it didn’t display correctly on the device they were using.</li>
+        <li>Ninety percent of people have left a website because it was poorly designed.</li>
+        <li>	If you’re about to redesign your website, don’t miss out on keeping up with what’s currently happening in the world of web design. You could end up with a poorly styled renovation.</li>
+        </ul></div>
+        
+        </div>
+        
+        
+        
+        
+        
+        <div class="mone2"    data-aos="slide-right">
+        <div class="dev1">
+        
+        <div class="dev2">
+        <span class="dev12"><img loading="lazy" width="800" height="533" src="https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-dev-25.png" alt="" title="" srcset="https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-dev-25.png 800w, https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-dev-25-480x320.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 800px, 100vw" class="deluxee" /></span>
+        </div>
+        </div>
+        </div>
+        </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="imgparagragh">
+        <div class="imgp">
+        <div class="iimmgs">
+        <div class="immgs">
+
+
+
+
+
+          <span class="preregion "><img  data-aos="slide-down" class="rigion" loading="lazy" width="830" height="553" src="https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-dev-10.png" alt="" title="" srcset="https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-dev-10.png 830w, https://www.cloudtechiq.com/wp-content/uploads/2020/06/web-dev-10-480x320.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 830px, 100vw" class="wp-image-263" /></span>
+          
+          </div>
+          </div>
+          
+          <div class="mp">
+          <div class="hforthreep">
+          
+          
+          
+          
+          <div class=""      data-aos="slide-up"><h4>Website Development</h4>
+          
+          <h3>Website Design Package</h3>
+          <p style="text-align: justify;"  class="ponly" >With the advancement of Internet, now website is not only limited to just a static page to provide some information about your business but becomes the global platform to deliver plenty of outstanding services using the advance and innovative web applications. We, at Cloud Technology, believe to provide our clients a complete web platform which radically improves their business opportunities and customer services. We not only develop stunning looking websites but also convert them into powerful application oriented dynamic value centers that emphatically symbolize your web services with style. Blended with advanced database management techniques and powerful yet easy user interfaces, your website performs as an interactive channel between your business and target audience.</p></div>
+          
+          </div>
+          </div>
+          
+          
+          
+          
+          </div>
+          
+          
+          </div>		</div>
+          </div>
+          </div>
+
+        </section> 
+
+
+
+
+        <footer>
+          <div class="butten2">
+            <div class="btnn33"  data-aos="slide-left"><h4><a href="#">LIVE CHAT</a></h4></div>
+            <div class="btnn22"  data-aos="slide-left"><h4><a href="#">ABOUT US</a></h4></div>
+            <div class="btnn11"  data-aos="slide-left"><h4><a href="#">PROFILE</a></h4></div>
+      
+            
+          </div>
+          <div class="formm">
+      
+            <div class="form-left">
+              <h1 data-aos="zoom-out-down">Get in Touch!</h1>
+              <form>  
+                <div class="input-row">
+                  <div class="input-group">
+                    <input type="text" placeholder="Name">
+                  </div>
+      
+                  <div class="input-group">
+                    <input type="text" placeholder="Email Address">
+                  </div>
+      
+                  <div class="input-group">
+                    <input type="text" placeholder="Address">
+                  </div>
+                  <div class="input-group">
+                    <select>
+                      <option>What Kind</option>
+                      <option>PERSONAL</option>
+                      <option>BUSINESS</option>
+                    </select>
+                  </div>
+                </div>
+                <textarea rows="5" placeholder="Message"></textarea>
+                <div class="under-form">
+                  <p>
+                    <span>
+                      12 + 6 = 
+                    </span>
+                    <input type="text">
+                    <button type="submit"   data-aos="zoom-out-up">send messages</button>
+                  </p>
+                </div>
+              </form>
+            </div>
+      
+            <div class="form-right">
+              <div class="cp" data-aos="zoom-out-right">
+                <p><i class="fa-solid fa-location-dot"></i> Office</p>
+                <ul>
+                  <li>• Al jezaaer St., Basra</li>
+                  <li>• Bakrajo Rood , Sulaymaniyah</li>
+                </ul>
+              </div>
+              <div class="cp" data-aos="zoom-out-left">
+                <p><i class="fa-solid fa-clock"></i> Hours</p>
+                <ul>
+                  <li>Sat ~ Thu: 9:00 AM – 9:00 PM</li>
+                  <li>Fri: Closed</li>
+                </ul>
+              </div>
+              <div class="cp" data-aos="zoom-out-right">
+                <p><i class="fa-solid fa-phone"></i> Call Us</p>
+                <ul>
+                  <li>Info: +(964) 770 – 0666300</li>
+                  <li>Support: +(964) 780 – 4488030</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+        <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            duration: 3000,
+            once: true,
+          });
+        </script>
+          
+        </body>
+
+
+        </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

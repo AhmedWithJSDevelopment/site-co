@@ -1,0 +1,1819 @@
+
+*  {
+    margin:0 ;
+    padding: 0 ;
+    box-sizing : border-box ;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+.section-header{
+    max-width: 1280px;
+    border-radius: 0 0 50px 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 60px 0px rgba(0,0,0,0.13);
+    z-index: 9000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e9e9e9;
+  }
+  
+  
+  .section-header:hover{
+    border-radius: 0;
+  }
+
+  
+  .container-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+  
+  }
+  
+  .left img{
+    width: 180px;
+    height: 65px;
+    padding-left: 30px;
+    margin-left: 50px;
+  }
+  
+  .right{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .right ul{
+    list-style: none;
+    display: flex;
+    padding-right: 150px;
+    margin: 20px 0;
+    justify-content: center;
+  }
+  
+  .right ul img{
+    width: 32px;
+    margin-right: 10px;
+  }
+  .right ul li{
+    width: 32px;
+    margin-right: 10px;
+  }
+  
+  .container-header2{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .container-header2 ul{
+    list-style: none;
+    display: flex;
+  }
+  
+  .container-header2 ul li{
+    padding: 5px 15px;
+    font-family: 'Prata', serif;
+    font-size: 14px;
+  }
+  
+  .container-header2 ul li a{
+    text-decoration: none;
+    color: #284169;
+  }
+  
+  .container-header2 ul li a:hover{
+    color: #28416986;
+  }
+  
+  .container-header2 ul li a:focus{
+    color: red;
+  }
+/* -------------------------------------------------------------------------------------------- */
+
+/* .mobile{
+  font-size: xx-large;
+display: none;
+
+    position: absolute;
+    color: #113064;
+    cursor: pointer;
+    top: -46px;
+    left: 58px;
+    margin-left: 63px;
+    font-size: 45px;
+    max-width: 100%;
+    width: 100%;} */
+
+
+
+
+
+
+    header.hddr{
+      position: fixed;
+      
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color:#e9e9e9;
+      box-shadow: 0 5px 10px rgba(0,0, 0, .1);
+      /* padding: 0px 7%; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* z-index: 100; */
+      display: none;
+      justify-content: center;
+      background-color: white;
+    }
+
+
+    
+header.hddr .navbar ul{
+  list-style: none;
+  }
+  header.hddr .navbar ul li{
+  position: relative;
+  float: left;
+  }
+  header.hddr .navbar ul li a{
+  font-size: 17px;
+  padding: 8px;
+  color: #333;
+  display: block;
+  margin-left: 14px;
+  transition: all .2s ease-in-out;
+  }
+  
+  header.hddr .navbar ul li a:hover{
+    background-color: #333;
+    background-color: #e9e9e9;
+    background-color: rgba(0,0,0,.03);
+    opacity: .7;
+    color: #fff;
+    color: #284169!important;
+  }
+  header.hddr .navbar ul li a:focus{
+    color: #ee2225!important;
+  }
+  
+  et_pb_menu_0_tb_header.et_pb_menu ul li.current-menu-item a {
+    color: #ee2225!important;
+}
+
+
+
+
+
+
+
+  #mennu-bar{
+    display: none;
+  }
+  
+  header.hddr label {
+    font-size: 50px;
+   
+    color: #284169;
+    cursor: pointer;
+    display: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------content------------------------- */
+
+
+
+.content1{
+    position: relative;
+    
+    text-align: center;
+    height: 550px;
+    width: 2560;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(140deg,#004872 0%,rgba(41,17,96,0.8) 100%),url(https://www.cloudtechiq.com/wp-content/uploads/2020/11/Education-scaled.jpg)!important;
+    /* background-image: linear-gradient(140deg,rgba(0, 0, 0, 0) 0%,rgb(247, 247, 3) 100%),url(https://www.cloudtechiq.com/wp-content/uploads/2020/11/Education-scaled.jpg)!important; */
+  
+    background-size: cover;
+    z-index: 850;
+  }
+  
+  .centered1{
+  
+
+
+    position: absolute;
+    top: 30% !important;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+    color: #f1f1f1;
+    padding: 7px;
+  }
+/*   
+  @keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  } */
+  
+  .centered1 h1{
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-family: 'Share Tech', sans-serif; 
+    /* animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; */
+  }
+  
+  .centered1 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    /* animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; */
+  }
+  
+  
+  
+  
+  
+  
+  .butten{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+   
+   
+    
+  }
+  
+  .butten a{
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+  
+  .btn1{
+    background-image: linear-gradient(90deg,#ffffff 0%,#2573f9 100%);
+    
+    background-color: #2573f9;
+    background-image: linear-gradient(90deg,#ffffff 0%,#2573f9 100%);
+    background-color: #2573f9;
+    /* background-image: linear-gradient(-270deg,gold 0%,black 100%);
+    background-color: #fff; */
+    border-radius: 0 100px 100px 0;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 12px;
+    padding-left: 30%;
+    text-align: right;
+    margin-right: 80px;
+    /* animation: slide-in-blurred-leftt 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both; */
+  }
+  
+  .btn2{
+    background-color: #307af9;
+    /* background-image: linear-gradient(-270deg,gold 0%,black 100%);
+    background-color: #fff; */
+    border-radius: 50px;
+    padding: 20px;
+    margin-right: 80px;
+    /* animation: slide-in-blurred-leftt 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both; */
+  }
+  
+  .btn2:hover{
+    background-color: #5e97f8;
+  }
+  
+  .btn3{
+    background-color: #5e97f8;
+    /* background-image: linear-gradient(-270deg,gold 0%,black 100%);
+    background-color: #fff; */
+    border-radius: 50px;
+    padding: 20px;
+    /* animation: slide-in-blurred-leftt 5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both; */
+  }
+  
+  .btn3:hover{
+    background-color: #307af9;
+  }
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+.butten{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+  
+  
+  
+    
+  }
+  
+  .butten a{
+    text-decoration: none;
+    color: #ffffff;
+   
+  }
+  
+  .btn1{
+    animation: slide-in-blurred-right 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    
+    background-image: linear-gradient(-270deg,gold 0%,black 100%);
+    background-color: #fff;
+    
+  
+  
+    border-radius: 0 100px 100px 0;
+    
+    overflow: hidden;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 12px;
+    padding-left: 50%;
+    text-align: right;
+    margin-right: 80px;
+    margin-left: -2px;
+    
+    animation: slide-in-blurred-leftt 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  animation-play-state: paused;
+  
+  
+  
+  
+  background-image: linear-gradient(90deg,#ffffff 0%,#2573f9 100%);
+      background-color: #2573f9;
+    
+  }
+  
+  
+  
+  section.content:hover .btn1{
+    animation-delay: 0.4s;
+    animation-play-state: running;
+  }
+  
+  
+  h4.bbttnn1 {
+    margin-left: -122px;
+}
+  
+  
+  .btn2{
+   
+   
+      background-color: #2573f9;
+    border-radius: 50px;
+    padding: 20px;
+    margin-right: 80px;
+    animation: slide-in-blurred-leftt 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation-play-state: paused;
+  }
+  
+  section.content:hover .btn2{
+    animation-delay: 0.4s;
+    animation-play-state: running;
+  }
+  
+  .btn3{
+   
+ 
+      background-color: #51b0ff;
+    border-radius: 50px;
+    padding: 20px;
+    animation: slide-in-blurred-leftt 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation-play-state: paused;
+  }
+  
+  
+  section.content:hover .btn3{
+    animation-delay: 0.4s;
+    animation-play-state: running;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+                              /* --------------------------------Sectiontwo------------------------                               */
+
+
+                              section.two {
+                                position: relative;
+                                background-color: #fff;
+                                background-position: 50%;
+                                background-size: 100%;
+                                background-size: cover;
+                                z-index: 60;
+                                margin-top: 5000px;
+                                overflow :nowrap;
+                                /* margin-top: 20px; */
+
+                                /* animation: slide-in-blurred-left 0.9s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+                                animation-play-state: paused; */
+                            }
+
+
+                                /* section.two{
+                                  animation-delay: 1s;
+                                  animation-play-state: running;
+
+                                } */
+
+
+
+
+                                /* section.content:hover .btn1{
+                                  animation-delay: 0.4s;
+                                  animation-play-state: running;
+                                }
+                                 */
+                              
+                            .twoone,.twoonee{
+                              padding-top: 1px!important;
+                              padding-right: 0px!important;
+                              padding-bottom: 90px!important;
+                              padding-left: 0px!important;
+                              padding-top: 1px;
+                              padding-right: 0px;
+                              padding-bottom: 90px;
+                              padding-left: 0px;
+                              text-align: left;
+                              width:50% ;
+                              
+                          }
+
+
+
+                               
+                          section.two{
+                            width: 100%;
+                            max-width: 100%;
+                            margin: 0;
+                            position: relative;
+                            margin-top: -50px;
+                            margin-top: -50px;
+                            /* top: 50px; */
+                            /* height: 500px; */
+                        }
+
+
+
+
+                          .twoone h2 {
+
+                        font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+                        font-weight: 700;
+                        font-size: 36px;
+                        color: #15314e!important;
+                        line-height: 1.9em;
+                        width: 80%;
+                        margin-top: 250px;
+
+                        margin-left: 100px;
+
+                       
+
+                          }
+
+                        
+
+                        .twoone:before {
+                          border-top-color: #ee2225;
+                          border-top-width: 4px;
+                      }
+
+
+
+                  strong {
+                    font-weight: 700;
+                  }
+
+
+
+                  .twoonee p{
+                    font-family: Open Sans,Arial,sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #15314e!important;
+                    line-height: 2em;
+                    width: 80%;
+                    margin:150px;
+                    margin-left: 100px;
+                    position: relative;
+                    
+                    text-align:justify;
+                    margin-top: 20px;
+                    height: 100%;
+
+                   
+
+                    
+                  }
+
+
+                
+
+
+
+                  .datasheet
+                  {
+                    position: relative;
+                    background-size: cover;
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                    
+                    animation-timing-function: linear;
+                     -webkit-animation-duration: .2s;
+                    animation-duration: .2s;
+
+                    color: #ffffff!important;
+                    border-width: 0px!important;
+                    border-radius: 100px;
+                    letter-spacing: 5px;
+                    font-size: 15px;
+                    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif!important;
+                    font-weight: 700!important;
+                    text-transform: uppercase!important;
+                    background-color: #15314e;
+                    width: 35%;
+                    margin-left: 100px;
+                    
+                    
+                  
+                    margin-top: -100px;
+                   
+
+                  }
+
+             
+
+                  .datasheet {
+                    padding-top: 16px!important;
+                    padding-right: 32px!important;
+                    padding-bottom: 16px!important;
+                    padding-left: 12px!important;
+
+                  }
+                  .datasheet:hover {
+                   background-color: red;
+
+                  }
+
+
+
+                  a.datta{
+                    color: #ffffff!important;
+                  }
+
+
+                  .datasheet>a {
+                    display: inline-block;
+                }
+
+
+
+                .datasheet:after {
+                  transition: all 300ms ease 0ms;
+
+                 }
+
+
+
+                 .datasheet {
+                   text-align: center;
+                  /* transition: background-color 300ms ease 0ms,border-radius 300ms ease 0ms,letter-spacing 300ms ease 0ms; */
+              }
+
+
+
+              a, a:hover {
+                text-decoration: none;
+            }
+
+
+
+                                            /* -----------twooneee----------- */          
+
+
+                          .twooneee {
+                            margin-left: auto;
+                            margin-right: auto;
+                            line-height: 0;
+                            
+                              background-size: cover;
+                              background-position: 50%;
+                              background-repeat: no-repeat;
+                          }
+                        
+
+
+
+
+
+
+
+
+                        .twooneeee img {
+                          position: relative;
+                          
+                          
+                          
+                     
+                          max-width: 1430px;
+                          width: 90%;
+                          height: auto;
+                          padding-left: 40%;
+                          
+                        
+                         
+                        
+                      }
+
+
+
+                    
+
+
+
+
+                      .twooneee{
+                      
+                        float: right;
+                        width:50% ;
+                        margin-top:-590px ;
+                        
+                    }
+
+
+
+
+                                                            /* ----------line----------------- */
+
+
+
+
+
+                        .divider
+                        {
+                           margin-left: 100px!important;
+                        margin-right: auto!important;
+                        margin-bottom: 10px!important;
+                        max-width: 40px;
+                        margin: 0 0 30px;
+                        position: relative;
+                      
+                        }
+
+
+                      
+
+
+                        .divider:before {
+                          content: "";
+                          width: 100%;
+                          height: 1px;
+                          border-top-color: #eee;
+                          border-top-color: rgba(0,0,0,.1);
+                          border-top-width: 1px;
+                          border-top-style: solid;
+                          position: absolute;
+                          left: 0;
+                          top: 0;
+                          z-index: 10;
+                      }
+
+
+
+
+
+                              
+
+                    .divider:before {
+                      border-top-color: #ee2225;
+                      border-top-width: 4px;
+                  }
+                  
+                
+                  .divider:after, .et_pb_space:after {
+                      content: "";
+                      display: table;
+                  }
+
+
+
+
+
+
+
+
+
+
+                          /* ------------section   3------------------------- */
+                          @-webkit-keyframes et_social_fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+                          @-moz-keyframes et_social_fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+                          @-o-keyframes et_social_fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+                          @keyframes et_social_fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+
+                          section.three {
+                            padding-top: 0px;
+                            padding-right: 0px;
+                            padding-bottom: 0px;
+                            margin-left: 100px;
+                            
+        
+                          float: left;
+                            
+                            max-width: 100%;
+                            
+                            position: relative;
+                            margin-top: -10px;
+                            margin-top: 200px;
+                         
+                            position: relative;
+                            background-color: #fff;
+                            background-position: 50%;
+                            background-size: 100%;
+                            background-size: cover;
+                            z-index: 60;
+                          
+                          }
+        
+        
+        
+        
+                            .iconone{
+                            
+                          max-width: 64px;
+                          text-align: left;
+                          margin-left: 0;
+                          
+                        }
+        
+        
+        
+        
+                          .icononee img.icononne{
+                            max-width: 100%;
+                            width: 100%;
+                            
+                            height: auto;
+                           
+                          }
+        
+        
+        
+        
+        
+        
+        .leftOnlineTraining
+        {
+          width: 50%;
+          float: left;
+        }
+        
+        
+        .rightOnlineTraining
+        {
+          width: 50%;
+          float: left;
+        }
+        
+        
+
+        @keyframes et_social_swing {
+          20% { -webkit-transform: rotate3d(0, 0, 1, 15deg); transform: rotate3d(0, 0, 1, 15deg); }
+          40% { -webkit-transform: rotate3d(0, 0, 1, -10deg); transform: rotate3d(0, 0, 1, -10deg); }
+          60% { -webkit-transform: rotate3d(0, 0, 1, 5deg); transform: rotate3d(0, 0, 1, 5deg); }
+          80% { -webkit-transform: rotate3d(0, 0, 1, -5deg); transform: rotate3d(0, 0, 1, -5deg); }
+          100% { -webkit-transform: rotate3d(0, 0, 1, 0deg); transform: rotate3d(0, 0, 1, 0deg); }
+        }
+         span.imagerightt img.imagerighttt
+        {
+          width:100% ;
+          /* height: 762px; */
+        
+          position: relative;
+                                  
+        
+          max-width: 800px;
+          width: 85%;
+          height: auto;
+          margin-right: 15%;
+          padding-left: 15%;
+        
+        
+         
+        } 
+        
+     
+        
+        .tittleone h2 {
+        
+          font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+          font-weight: 700;
+          font-size: 36px;
+          color: #15314e!important;
+          line-height: 1.9em;
+          width: 80%;
+        
+        
+          margin-bottom: 10px!important;
+          margin-top: 10px!important;
+          
+        
+          animation-play-state: paused;
+          
+        
+            }
+        
+        
+            section.three:hover .tittleone h2 {
+              animation-delay: 0.4s;
+              animation-play-state: running;
+            }
+        
+            
+        
+             .divider2
+            {
+            
+            margin-right: auto!important;
+            margin-bottom: 10px!important;
+            margin-top: 10px!important;
+            max-width: 40px;
+            /* margin: 0 0 30px; */
+            position: relative;
+        
+          
+            } 
+        
+        
+        
+            section.three:hover  .divider2{
+              animation-delay: 0.4s;
+              animation-play-state: running;
+            }
+        
+            .divider2:before {
+              content: "";
+              width: 80%;
+              height: 1px;
+              border-top-color: #eee;
+              border-top-color: rgba(0,0,0,.1);
+              border-top-width: 1px;
+              border-top-style: solid;
+              position: absolute;
+              left: 0;
+              top: 0;
+              z-index: 10;
+          }
+        
+        
+        
+        
+        
+                  
+        
+        .divider2:before {
+          border-top-color: #ee2225;
+          border-top-width: 4px;
+        }
+        
+        
+        .divider2:after, .et_pb_space:after {
+          content: "";
+          display: table;
+        }  
+        
+        
+        
+        
+        
+        .phraseone p{
+          font-family: Open Sans,Arial,sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          color: #15314e!important;
+          line-height: 2em;
+          width: 80%;
+        
+          position: relative;
+          
+          text-align:justify;
+          margin-top: 20px;
+          margin-bottom: 50px;
+          height: 100%;
+        
+         
+        }
+        
+       
+        
+        
+        
+        
+                                                      /* ----------------------ddatasheet2-------------------------------- */
+        
+        
+        
+        
+        
+        
+                
+        
+                                                      .datasheet2
+                                                      {
+                                                        position: relative;
+                                                        background-size: cover;
+                                                        background-position: 50%;
+                                                        background-repeat: no-repeat;
+                                                        
+                                                        animation-timing-function: linear;
+                                                         -webkit-animation-duration: .2s;
+                                                        animation-duration: .2s;
+                                    
+                                                        color: #ffffff!important;
+                                                        border-width: 0px!important;
+                                                        border-radius: 100px;
+                                                        letter-spacing: 5px;
+                                                        font-size: 15px;
+                                                        font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif!important;
+                                                        font-weight: 700!important;
+                                                        text-transform: uppercase!important;
+                                                        background-color: #15314e;
+                                                        width:65%;
+                                                       
+                                                        
+                                                        
+                                                      
+                                                        
+                                                        margin-bottom: 100px!important;
+                                                        margin-top: 10px!important;
+                                    
+                                                      }
+                                    
+                                    
+                                                      .datasheet2 {
+                                                        padding-top: 16px!important;
+                                                        padding-right: 16px!important;
+                                                        padding-bottom: 16px!important;
+                                                        padding-left: 16px!important;
+                                    
+                                                      }
+                                                      .datasheet2:hover {
+                                                       background-color: red;
+                                    
+                                                      }
+                                    
+                                    
+                                    
+                                                      a.datta{
+                                                        color: #ffffff!important;
+                                                      }
+                                    
+                                    
+                                                     .datasheet2>a {
+                                                        display: inline-block;
+                                                    }
+                                    
+                                    
+                                    
+                                                    .datasheet2:after {
+                                                      transition: all 300ms ease 0ms;
+                                    
+                                                     }
+                                    
+                                    
+                                    
+                                                     .datasheet2 {
+                                                       text-align: center;
+                                                      transition: background-color 300ms ease 0ms,border-radius 300ms ease 0ms,letter-spacing 300ms ease 0ms;
+                                                      
+                                                  }
+                                    
+                                                 
+                                    
+                                                  a, a:hover {
+                                                    text-decoration: none;
+                                                }
+                                    
+        
+        
+        
+        
+
+                                                section.threee {
+                                                    padding-top: 0px;
+                                                    padding-right: 0px;
+                                                    padding-bottom: 0px;
+                                                    
+                                                    
+                                
+                                                  float: left;
+                                                    
+                                                    max-width: 100%;
+                                                    
+                                                    position: relative;
+                                                    margin-top: 100px;
+                                                    margin-bottom: 100px;
+                                
+                                                    position: relative;
+                                                    /* background-color: #fff; */
+                                                    background-position: 50%;
+                                                    background-size: 100%;
+                                                    background-size: cover;
+                                                    z-index: 60;
+          
+          
+          
+                                                    background-blend-mode: overlay;
+                                                    background-image: url(https://www.cloudtechiq.com/wp-content/uploads/2020/03/coding-background-texture.jpg),linear-gradient(180deg,rgba(0,72,114,0.9) 0%,#291160 100%)!important;
+                                                   
+                                                
+                                                
+                                                  }
+                                                
+          
+          
+          
+          
+                                                    .orii
+                                              {
+                                                margin-top: 200px;
+                                              
+                                              }
+          
+          
+          
+                                               
+                                                
+                                                  
+         
+          
+                                              .tittleoneb h2 {
+          
+                                                font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+                                                font-weight: 700;
+                                                font-size: 36px;
+                                                color: #f1f1f1!important;
+                                                line-height: 1.9em;
+                                                width: 80%;
+          
+                                              
+                                              
+                                                margin-bottom: 10px!important;
+                                                margin-top: 10px!important;
+                                                
+                                              
+                                              
+                                              animation-play-state: paused;
+                                                  }
+          
+                                                  section.threee:hover  .tittleoneb h2  {
+                                                    animation-delay: 0.4s;
+                                                    animation-play-state: running;
+                                                  }
+          
+          
+          
+                                                  .phraseoneb p{
+                                                    font-family: Open Sans,Arial,sans-serif;
+                                                    font-weight: 500;
+                                                    font-size: 16px;
+                                                    color: #15314e!important;
+                                                    color: #d4ccff!important;
+                                                    line-height: 2em;
+                                                    width: 80%;
+                                                   
+                                                    position: relative;
+                                                    
+                                                    text-align:justify;
+                                                    margin-top: 20px;
+                                                    margin-bottom: 20px;
+                                                    height: 100%;
+                                                  
+                                                 
+                                                  
+                                                  }
+          
+                                                  section.threee:hover .phraseoneb p  {
+                                                    animation-delay: 0.4s;
+                                                    animation-play-state: running;
+                                                  }
+          
+          
+          
+          
+          
+                                                                                                  
+                                                          .leftOnlineTrainingg
+                                                          {
+                                                            width: 30%;
+                                                            float: left;
+                                                          }
+          
+          
+                                                          .mc
+                                                          {
+                                                            width: 60%;
+                                                            float: left;
+                                                            box-shadow: 0px 10px 60px 0px rgb(71 74 182 / 12%);
+                                                            margin-bottom: 200px;
+                                                            margin-right:10px ;
+                                                          
+          
+                                                          }
+          
+                                                          
+          
+                                                          .column1{
+                                                            float: left;
+                                                           width: 46%;
+                                                           margin-right: 10px !important;
+                                                           margin-left: 20px !important;
+                                                           margin-bottom: 30px !important;
+                                                           margin-top: 20px !important;
+                                                          
+          
+                                                          }
+          
+                                                          
+          
+                                                          .column2{
+                                                           width: 46%;
+                                                           float: left;
+                                                           text-align: left;
+                                                           margin-right: 20px !important;
+                                                           margin-left: 10px !important;
+                                                           margin-bottom: 30px !important;
+                                                           margin-top: 20px !important;
+                                                          
+                                                          }
+                                                        
+          
+                                                               img.iimage
+                                                              {
+                                                                width: 250px;
+                                                                margin-bottom: 20px !important;
+                                                                margin-top: 30px !important;
+                                                               
+          
+                                                               
+          
+          
+                                                              }
+          
+                                                            
+                                                          
+          
+                                                            .cop
+                                                            {
+                                                              margin-top: 20px !important;
+                                                              margin-bottom: 20px !important;
+                                                              margin-right: 20px !important;
+                                                              margin-left: 20px !important;
+                                                             
+                                                             
+                                                            }
+          
+                                                                  span.ones img
+                                                                  {
+                                                                    margin-top: 40px !important;
+                                                                   
+                                                                   
+                                                                   
+                                                                  }
+          
+          
+          
+          
+                                                                  span.twos img
+                                                                  {
+                                                                    margin-top: 110px !important;
+                                                                  
+          
+                                                                    
+                                                                
+                                                                  }
+                                                                  span.threes img
+                                                                  {
+                                                                    margin-top: 50px !important ;
+                                                                   
+                                                                    
+                                                                    
+                                                                  }
+                                                                  
+                                                                  _.mainblurbimage  span{
+                                                                    animation: slide-in-blurred-left 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both !important;
+                                                            animation-play-state: paused;
+                                                                  }               
+
+
+
+
+
+
+
+
+
+
+                                                                  
+
+                                      section.threeoo {
+                                       
+                                        padding-top: 0px;
+                                        padding-right: 0px;
+                                        padding-bottom: 0px;
+                                       
+                                        
+                    
+                                      float: left;
+                                        
+                                        max-width: 100%;
+                                        width: 100%;
+                                        position: relative;
+                                        margin-top: 150px;
+                                        margin-bottom: 50px;
+                    
+                                        position: relative;
+                                        
+                                        background-position: 50%;
+                                        background-size: 50%;
+                                        background-size: cover;
+                                        z-index: 60;
+                                        
+                                          height: 200px;
+
+
+                                        background-blend-mode: overlay;
+                                       
+                                    
+                                        background-color: #e9e9e9!important;
+                                       
+                                        
+                                    }
+
+
+                                    .tittleoneoo h2
+                                    {
+
+                                    font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+                                    font-weight: 700;
+                                    font-size: 36px;
+                                    color: #15314e!important;
+                                    line-height: 1.9em;
+                                    width: 80%;
+                                  
+
+                                    
+                                  
+                                  
+                                  }
+
+                                  section.threeoo:hover .tittleoneoo h2 {
+                                    animation-delay: 0.4s;
+                                    animation-play-state: running;
+                                  }
+
+                                    .phraseoneoo p
+                                    {
+                                      color: #15314e!important;
+                                      font-size: 25px;
+
+                                    
+                                    
+                                   
+                                
+                                  
+                                  }
+
+                               
+                                    
+
+
+                                    .tittleoneoo h2 ,.phraseoneoo p
+                                    {
+                                      margin-left: 100px !important;
+                                      margin-top:30px !important;
+                                     
+
+                                    }
+
+
+
+
+                                     /* ----------------------ddatasheet44-------------------------------- */
+
+
+
+
+
+
+        
+
+                                     .datasheet44
+                                     {
+                                       position: relative;
+                                       background-size: cover;
+                                       background-position: 50%;
+                                       background-repeat: no-repeat;
+                                       
+                                       animation-timing-function: linear;
+                                        -webkit-animation-duration: .2s;
+                                       animation-duration: .2s;
+                   
+                                       color: #ffffff!important;
+                                       border-width: 0px!important;
+                                       border-radius: 100px;
+                                       letter-spacing: 5px;
+                                       font-size: 15px;
+                                       font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif!important;
+                                       font-weight: 700!important;
+                                       text-transform: uppercase!important;
+                                       background-color: #15314e;
+                                       width:40%;
+                                      
+                                       
+                                       
+                                     
+                                       
+                                       margin-bottom: 100px!important;
+                                       margin-top: 10px!important;
+                   
+
+                                   
+                                   }
+
+                                  
+
+                                     .datasheet44 {
+                                       padding-top: 16px!important;
+                                       padding-right: 16px!important;
+                                       padding-bottom: 16px!important;
+                                       padding-left: 16px!important;
+                                       left: 600px;
+                                       top:-140px;
+                                       height: 60px;
+                   
+                                     }
+                                     .datasheet44:hover {
+                                      background-color: red;
+                   
+                                     }
+                   
+                   
+                   
+                                     a.datta{
+                                       color: #ffffff!important;
+                                     }
+                   
+                   
+                                    .datasheet44>a {
+                                       display: inline-block;
+                                   }
+                   
+                   
+                   
+                                   .datasheet44:after {
+                                     transition: all 300ms ease 0ms;
+                   
+                                    }
+                   
+                   
+                   
+                                    .datasheet44 {
+                                      text-align: center;
+                                     transition: background-color 300ms ease 0ms,border-radius 300ms ease 0ms,letter-spacing 300ms ease 0ms;
+                                 }
+                   
+                   
+                   
+                                 a, a:hover {
+                                   text-decoration: none;
+                               }
+                   
+
+
+
+
+        
+
+                                     .datasheet55
+                                     {
+                                       position: relative;
+                                       background-size: cover;
+                                       background-position: 50%;
+                                       background-repeat: no-repeat;
+                                       
+                                       animation-timing-function: linear;
+                                        -webkit-animation-duration: .2s;
+                                       animation-duration: .2s;
+                   
+                                       color: #ffffff!important;
+                                       border-width: 0px!important;
+                                       border-radius: 100px;
+                                       letter-spacing: 5px;
+                                       font-size: 15px;
+                                       font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif!important;
+                                       font-weight: 700!important;
+                                       text-transform: uppercase!important;
+                                       background-color: #15314e;
+                                       width:30%;
+                                      
+                                       
+                                       
+                                     
+                                       
+                                       margin-bottom: 100px!important;
+                                       margin-top: 10px!important;
+                   
+                                     }
+                   
+                   
+                                     .datasheet55 {
+                                       padding-top: 16px!important;
+                                       padding-right: 16px!important;
+                                       padding-bottom: 16px!important;
+                                       padding-left: 16px!important;
+                                       left: 657px;
+                                       top:-215px;
+                                       height: 60px;
+
+                                       color: #15314e!important;
+                                       border-width: 0px!important;
+                                       border-radius: 100px;
+                                       letter-spacing: 5px;
+                                       font-size: 15px;
+                                       font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif!important;
+                                       font-weight: 700!important;
+                                       text-transform: uppercase!important;
+                                       background-color: #ffffff;
+                   
+                                     
+
+                                    
+                                   
+                                   }
+
+                               
+
+
+                                     .datasheet55:hover {
+                                      background-color: yellow;
+                   
+                                     }
+                   
+                   
+                   
+                                     a.dattaao{
+                                      color: #15314e!important;
+
+                                     }
+                   
+                   
+                                    .datasheet55>a {
+                                       display: inline-block;
+                                   }
+                   
+                   
+                   
+                                   .datasheet55:after {
+                                     transition: all 300ms ease 0ms;
+                   
+                                    }
+                   
+                   
+                   
+                                    .datasheet55 {
+                                      text-align: center;
+                                     transition: background-color 300ms ease 0ms,border-radius 300ms ease 0ms,letter-spacing 300ms ease 0ms;
+                                 }
+                   
+                   
+                   
+                                 a, a:hover {
+                                   text-decoration: none;
+                               }
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-image: linear-gradient(140deg,#004872 0%,rgba(41,17,96,0.8) 100%),url(https://www.cloudtechiq.com/wp-content/uploads/2020/07/it-services-06.jpg)!important;
+    padding-top: 120px;
+    padding-right: 0px;
+    padding-bottom: 120px;
+    padding-left: 0px;
+    position: relative;
+    background-color: #fff;
+    background-position: 1%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0;
+    outline: 0;
+    margin: 0;
+  top: 250px;
+  width: 100%;
+  max-width: 100%;
+    float: left;
+  }
+  
+  .form-left h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Share Tech', sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  
+  .formm{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 25vh;
+    float: left;
+  }
+  
+  .input-row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .input-row .input-group{
+    flex-basis: 45%;
+  }
+  
+  
+  input{
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    padding-bottom: 5px;
+    margin: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+  
+  }
+  
+  select{
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    padding-bottom: 5px;
+    margin: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+  }
+  
+  textarea{
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    width: 50%;
+    outline: none;
+    padding: 10px;
+    margin: 20px 33px;
+    border-bottom: 2px solid #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-align: left;
+  }
+  
+  ::placeholder{
+    color: #ffffff;
+  }
+  
+  .form-right{
+    padding: 20px 0;
+  }
+  
+  .cp{
+    margin: 15px 0;
+  }
+  
+  .cp p{
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Share Tech', sans-serif;
+    margin: 15px 0;
+  }
+  
+  .cp i{
+    font-size: 24px;
+    color: #ffa727;
+  }
+  
+  .cp ul{
+    list-style: none;
+    margin-left: 25px;
+  
+  }
+  
+  .cp ul li{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0;
+  }
+  
+  
+  .under-form{
+    display: flex;
+    justify-content: end;
+  }
+  
+  .under-form span{
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+  }
+  
+  .under-form input{
+    background-color: rgba(0,0,0,0);
+    width: 30px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    padding-bottom: 5px;
+    margin: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+  }
+  
+  .under-form button{
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700!important;
+    text-transform: uppercase;
+    background-color: #ffa727;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  
+  .butten2{
+    position: absolute;
+    top: 0%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+    justify-content: end;
+    
+  }
+  
+  .butten2 a{
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+  
+  .btnn11{
+    background-image: linear-gradient(270deg,#ffffff 0%,#2573f9 100%);
+    background-color: #2573f9;
+    border-radius: 100px 0 0 100px;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 12px;
+    padding-right: 50%;
+    text-align: left;
+  }
+  
+  .btnn22{
+    background-color: #307af9;
+    border-radius: 50px;
+    padding: 20px;
+    margin-right: 80px;
+  }
+  
+  .btnn33{
+    background-color: #307af9;
+    border-radius: 50px;
+    padding: 20px;
+    margin-right: 80px;
+  }
